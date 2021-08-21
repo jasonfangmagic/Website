@@ -241,7 +241,8 @@ p, li, span {
   display: inline-block;
   position: relative;
   padding-right: 15px;
-  color: #242B58;
+  /*header color!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  color: #ffffff;
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -1845,6 +1846,7 @@ h6 {
 /* Heder css start*/
 .site-header {
   margin-top: 15px;
+  /*start header !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   padding: 25px 0px;
   position: absolute;
   width: 100%;
@@ -2314,9 +2316,10 @@ input.form-control-sm {
 }
 
 /* About css */
+/*about me position !!!!!!!!!!!!!!!!!!!!!!*/
 .about-area {
   position: relative;
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 .about-content h6 {
@@ -2330,6 +2333,7 @@ input.form-control-sm {
   color: #ffffff;
   font-size: 28px;
 }
+/*about text*/
 .about-content p {
   color: #B0B0B2;
   line-height: 24px;

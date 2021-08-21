@@ -241,7 +241,8 @@ p, li, span {
   display: inline-block;
   position: relative;
   padding-right: 15px;
-  color: #242B58;
+  color:#ffffff;
+  /*#242B58*/
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -2316,7 +2317,7 @@ input.form-control-sm {
 /* About css */
 .about-area {
   position: relative;
-  padding-top: 40px;
+  padding-top: 0px;
 }
 
 .about-content h6 {
@@ -2330,7 +2331,6 @@ input.form-control-sm {
   color: #ffffff;
   font-size: 28px;
 }
-/*about text*/
 .about-content p {
   color: #B0B0B2;
   line-height: 24px;
