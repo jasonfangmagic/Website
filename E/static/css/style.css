@@ -2133,7 +2133,7 @@ input.form-control-sm {
 }
 .hero-area .social-links {
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   right: 40px;
   top: 50%;
   z-index: 9;
