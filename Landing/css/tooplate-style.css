@@ -11,6 +11,7 @@ a, button {
 	color: #FFFFFF;
 }
 
+
 a:hover {
 	color: #FFFF00;
 	text-decoration: underline;
@@ -207,17 +208,44 @@ h5 {
 	text-align:center;
 	width:100%;
 }
+/*a {
+	background-color: powderblue;
+	transition: background-color .5s;
+}
+
+a:hover {
+	background-color: gold;
+}*/
+
 
 .btn-danger {
+	display:inline-block;
+	width:250px;
 	font-size: 1.5rem;
 	margin-top: 20px;
 	padding-left: 60px;
 	padding-right: 60px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #C66666;
-	border-color: #C66666;
+	background-color: #6B84FF;
+	border-color: #6B84FF;
+
 }
+
+
+
+/*.font changed*/
+
+/*.site-btn {
+	font-size: 1.5rem;
+	margin-top: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #6B84FF;
+	border-color: #6B84FF;
+}*/
 
 .row {
 	display: -ms-flexbox;
