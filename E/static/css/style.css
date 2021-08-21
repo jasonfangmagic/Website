@@ -1845,12 +1845,13 @@ h6 {
 
 /* Heder css start*/
 .site-header {
-  margin-top: 15px;
+  margin-top: 0px;
   /*start header !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  padding: 25px 0px;
-  position: absolute;
+  padding: 10px 0px;
+  position: fixed; /*fixed header!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   width: 100%;
-  z-index: 2;
+  background-color: #242B58;
+  z-index: 9;
 }
 
 /* Navigation css */
@@ -2093,6 +2094,7 @@ input.form-control-sm {
     display: none;
   }
 }
+/*avater position !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero-area .hero-avater {
   margin-top: 330px;
 }
@@ -2131,9 +2133,10 @@ input.form-control-sm {
 }
 .hero-area .social-links {
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   right: 40px;
   top: 50%;
+  z-index: 9;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2298,7 +2301,7 @@ input.form-control-sm {
   justify-content: center;
   align-items: center;
   color: #242B58;
-  font-size: 14px;
+  font-size: 24px;
   background: #ffffff;
   border-radius: 50%;
 }
@@ -3096,12 +3099,12 @@ input.form-control-sm {
   }
 }
 
-/* breadcrumb css */
+/* breadcrumb css                      !!!!!!!!!!!!!!!!!!boarder size */
 .breadcrumb-area {
   background: #12152F;
-  padding-top: 220px;
+  padding-top: 85px;
   position: relative;
-  padding-bottom: 108px;
+  padding-bottom: 0px;
 }
 .breadcrumb-area .shape {
   position: absolute;
