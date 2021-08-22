@@ -111,6 +111,13 @@ h5 {
 	margin-left: auto;
 }
 
+.spades {
+	position: relative;
+	top:50px;
+	left:35%;
+}
+
+
 .tm-btn-block {
 	display: block;
 }
