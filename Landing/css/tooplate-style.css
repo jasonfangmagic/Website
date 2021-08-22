@@ -62,9 +62,11 @@ a:focus {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 8rem;
+	font-weight: bold;
 	text-shadow: 2px 2px 8px #000000;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
+	font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
@@ -111,11 +113,7 @@ h5 {
 	margin-left: auto;
 }
 
-.spades {
-	position: relative;
-	top:50px;
-	left:35%;
-}
+
 
 
 .tm-btn-block {
@@ -254,6 +252,8 @@ a:hover {
 	background-color: #6B84FF;
 	border-color: #6B84FF;
 	font-family: "Josefin Sans", sans-serif;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .site-btn:hover {
@@ -304,4 +304,26 @@ a:hover {
 	.tm-page-4-content { 
 		margin-bottom: 50px;
 	}
+}
+
+
+/*Ariticle Box*/
+.jasonfang {
+	position: relative;
+	top:55px;
+	text-align: center;
+}
+
+
+.spades {
+	position: relative;
+	top:50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jasonfang2 {
+	position: relative;
+	top:140px;
+	text-align: center;
 }
