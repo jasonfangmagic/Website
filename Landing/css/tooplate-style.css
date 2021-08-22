@@ -29,7 +29,7 @@ a:focus {
 
 .tm-text-white { color: #fff; }
 
-.tm-page-1-content { 
+.tm-page-1-content {
 	padding-top: 1vh;
 	align-items: center;
 }
@@ -260,7 +260,7 @@ a:hover {
 
 @media screen and (max-width: 991px) {
 	.tm-img-container {
-		max-width: 490px;
+		max-width: 4tm-page-190px;
 		width: 90%;
 	}
 	.tm-slider-img {
