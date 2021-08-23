@@ -81,8 +81,10 @@ h3 {
 
 h5 {
 	padding-left: 20px;
-	font-size: 2rem;
+	font-size: 2.7rem;
 	font-weight: bold;
+	font-family: "Josefin Sans", sans-serif;
+	color: white;
 
 }
 
@@ -101,7 +103,7 @@ h5 {
 }
 
 .tm-page-5-content {
-	float: right;	
+	float: left;
 }
 
 .container {
@@ -217,6 +219,7 @@ h5 {
 	text-align:center;
 	width:100%;
 }
+
 /*a {
 	background-color: powderblue;
 	transition: background-color .5s;
@@ -315,7 +318,7 @@ a:hover {
 /*Ariticle Box*/
 .jasonfang {
 	position: relative;
-	top:55px;
+	top:67px;
 	text-align: center;
 }
 
@@ -339,4 +342,9 @@ a:hover {
 	text-align: center;
 }
 
+.jasonfang4 {
+	position: relative;
+	top:10px;
+	text-align: center;
 
+}
