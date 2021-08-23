@@ -2121,6 +2121,7 @@ input.form-control-sm {
 /*avater position !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero-area .hero-avater {
   margin-top: 330px;
+
 }
 @media (max-width: 1199px) {
   .hero-area .hero-avater {
@@ -2447,9 +2448,11 @@ input.form-control-sm {
 
 .service-shape {
   position: absolute;
-  right: -115px;
-  top: -180px;
+  right: -50px;
+  top: -250px;
 }
+
+/*test*/
 @media (max-width: 1650px) {
   .service-shape {
     right: -40px;
@@ -2620,6 +2623,7 @@ input.form-control-sm {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  
 }
 .work-item .content h3 {
   color: #ffffff;
