@@ -197,6 +197,28 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+
+
+}
+
+.site-btn2 {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: #6B84FF;
+  padding: 8.5px 45px;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #6B84FF;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  width: 150px;
 }
 @media (max-width: 767px) {
   .site-btn {
@@ -2020,11 +2042,13 @@ input.form-control-sm {
 }
 .hero-area .shape {
   position: absolute;
+  z-index: -9;
 }
 .hero-area .shape__left-top {
-  left: -80px;
-  top: -130px;
+  left: 50px;
+  top: 100px;
 }
+/*test*/
 @media (max-width: 1650px) {
   .hero-area .shape__left-top {
     left: -145px;
@@ -2046,7 +2070,7 @@ input.form-control-sm {
   }
 }
 .hero-area .shape__left-bottom {
-  bottom: 0;
+  bottom: 20px;
   left: 220px;
 }
 @media (max-width: 1650px) {
@@ -2136,7 +2160,7 @@ input.form-control-sm {
   position: absolute;
   right: 40px;
   top: 50%;
-  z-index: 9;
+  z-index: 2;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2184,6 +2208,8 @@ input.form-control-sm {
   position: relative;
   margin-top: 330px;
   margin-bottom: 265px;
+  margin-right: 20px;
+
 }
 @media (max-width: 1199px) {
   .hero-content {
