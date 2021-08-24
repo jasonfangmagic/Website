@@ -220,6 +220,37 @@ p, li, span {
   text-align: center;
   width: 150px;
 }
+
+.site-btn3 {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+
+}
+
+.site-btn4 {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  max-width: 95%;
+  margin-left: 20px;
+  /*margin-right: 20px;*/
+}
+
 @media (max-width: 767px) {
   .site-btn {
     padding: 7.5px 25px;
@@ -3601,6 +3632,29 @@ input.form-control-sm {
 }
 
 /*# sourceMappingURL=style.css.map */
+/*
+.modal-backdrop {
+  background-color: red;
+}
+*/
+
+.modal-overlay
+{
+  background: #090a1a;
+}
+
+.modal-content{
+  border:black 3px solid;
+}
+
+/*
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}*/
 .modal-content {
-  margin: auto;
+  border: none;
 }
