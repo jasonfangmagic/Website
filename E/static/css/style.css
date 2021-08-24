@@ -2616,6 +2616,7 @@ input.form-control-sm {
 .work-item .thumb {
   overflow: hidden;
   border-radius: 10px;
+
 }
 .work-item .thumb img {
   width: 100%;
@@ -2623,7 +2624,7 @@ input.form-control-sm {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  
+
 }
 .work-item .content h3 {
   color: #ffffff;
@@ -3600,3 +3601,6 @@ input.form-control-sm {
 }
 
 /*# sourceMappingURL=style.css.map */
+.modal-content {
+  margin: auto;
+}
