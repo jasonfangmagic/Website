@@ -3781,3 +3781,14 @@ body {
   margin-left: 12px;
   width: 100%;
 }
+
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+}
