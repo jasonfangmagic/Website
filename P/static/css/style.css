@@ -251,6 +251,22 @@ p, li, span {
   /*margin-right: 20px;*/
 }
 
+.site-btn5 {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  max-width: 95%;
+  top: 35px;
+  /*margin-right: 20px;*/
+}
+
 .wechattext {
   font-size: 28px;
 /*  text-transform: capitalize;*/
@@ -2424,6 +2440,7 @@ input.form-control-sm {
   color: #E2E2E3;
   font-weight: 400;
   margin-bottom: 15px;
+
 }
 .skill__box .progress {
   height: 10px;
