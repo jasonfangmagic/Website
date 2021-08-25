@@ -2115,7 +2115,7 @@ input.form-control-sm {
   }
 }
 .hero-area .shape__left-bottom {
-  bottom: 20px;
+  bottom: 80px;
   left: 220px;
 }
 @media (max-width: 1650px) {
@@ -2252,7 +2252,7 @@ input.form-control-sm {
 
 .hero-content {
   position: relative;
-  margin-top: 330px;
+  margin-top: 250px;
   margin-bottom: 265px;
   margin-right: 20px;
 
@@ -3818,3 +3818,4 @@ body {
 .swip img:hover{
   margin-left: -300px;
 }
+
