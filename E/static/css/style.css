@@ -253,7 +253,7 @@ p, li, span {
 
 .wechattext {
   font-size: 28px;
-  text-transform: capitalize;
+/*  text-transform: capitalize;*/
   color: #ffffff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
