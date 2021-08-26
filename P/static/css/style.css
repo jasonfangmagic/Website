@@ -138,6 +138,11 @@ p, li, span {
   color: #ffffff;
 }
 
+.white2 {
+  color: #c9c9c9;
+}
+
+
 .f-right {
   float: right;
 }
@@ -413,6 +418,7 @@ p, li, span {
   position: absolute;
   left: 0;
   top: -150px;
+  z-index: -10;
 }
 @media (max-width: 1650px) {
   .side-shape {
@@ -2103,7 +2109,7 @@ input.form-control-sm {
 }
 .hero-area .shape {
   position: absolute;
-  z-index: -9;
+  z-index: -20;
 }
 .hero-area .shape__left-top {
   left: 50px;
@@ -2512,6 +2518,7 @@ input.form-control-sm {
   position: absolute;
   right: -50px;
   top: -250px;
+  z-index: -9;
 }
 
 /*test*/
@@ -3845,4 +3852,12 @@ body {
 
 .hero-btns2 {
   margin-top: 150px;
+}
+
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
 }
