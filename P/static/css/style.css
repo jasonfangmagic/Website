@@ -142,6 +142,18 @@ p, li, span {
   color: #c9c9c9;
 }
 
+.white3 {
+  color: #c9c9c9;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.white4 {
+  color: #c9c9c9;
+  position: relative;
+  padding: 25px 20px;
+}
+
 
 .f-right {
   float: right;
@@ -282,8 +294,9 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
-  max-width: 95%;
+  /*max-width: 95%;*/
   text-align: center;
+  padding: 5px 30px;
 }
 
 @media (max-width: 767px) {
@@ -2888,7 +2901,13 @@ input.form-control-sm {
 /* blog css */
 .blog-area {
   position: relative;
+  top: -120px;
 }
+
+.blog-area2 {
+  position: relative;
+}
+
 .blog-area__single-page .side-shape {
   right: 0;
   bottom: -50px;
@@ -3802,7 +3821,6 @@ body {
 .wechatimg {
   position: relative;
   display: block;
-  margin-left: 12px;
   width: 100%;
 }
 
@@ -3859,5 +3877,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  text-align: center;
+}
+
+.center2 {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }

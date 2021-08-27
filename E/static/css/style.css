@@ -261,8 +261,8 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
-  max-width: 95%;
   text-align: center;
+  padding: 5px 30px;
 }
 
 @media (max-width: 767px) {
@@ -3778,7 +3778,6 @@ body {
 .wechatimg {
   position: relative;
   display: block;
-  margin-left: 12px;
   width: 100%;
 }
 
