@@ -2534,6 +2534,13 @@ input.form-control-sm {
   z-index: -9;
 }
 
+.service-shape2 {
+  position: absolute;
+  right: -50px;
+  top: -300px;
+  z-index: -9;
+}
+
 /*test*/
 @media (max-width: 1650px) {
   .service-shape {

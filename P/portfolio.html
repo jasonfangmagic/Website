@@ -85,74 +85,191 @@
     <!-- breadcrumb area end -->
 
     <!-- work area start -->
-    <section class="work-area pt-25">
-        <div class="container psr">
+    <section class="work-area pt-190">
+        <span class="side-shape">
+            <img src="static/picture/shape-side.png" alt="">
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-right shape-wrap">
+                    <div class="section-heading mb-90">
+                        <h2>My Works</h2>
+
+                        <span class="service-shape service-shape__left">
+                            <img src="static/picture/4code.png" alt=""
+                                 width="580" height="309">
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xl-12">
                     <div class="work-top mb-90">
-                        <div class="work-nav work-nav__2">
+                        <div class="work-nav">
                             <ul>
                                 <li data-filter="*" class="active">All</li>
-                                <li data-filter=".mg">Magic</li>
-                                <li data-filter=".cl">Close-up Magic</li>
-                                <li data-filter=".st">Stage Magic</li>
-                                <li data-filter=".bl">Balloon Animals</li>
-                                <li data-filter=".bp">Birthday Party</li>
-                                <li data-filter=".fp">Face Painting</li>
+                                <li data-filter=".ml">Machine Learning</li>
+                                <li data-filter=".dl">Deep Learning</li>
+                                <li data-filter=".cv">Computer Vision</li>
+                                <li data-filter=".nlp">NLP</li>
+                                <li data-filter=".ma">Marketing Analytics</li>
+                                <li data-filter=".dm">Digital Marketing</li>
+
+
 
                             </ul>
-                       <!-- </div>
-                        <a href="portfolio.html" class="inline-btn">View All</a>
-                    </div>-->
+                        </div>
+                        <!--<br>
+                        <div class="work-nav">
+                            <ul>
+                                <li data-filter=".ma">Marketing Analytics</li>
+                                <li data-filter=".dm">Digital Marketing</li>
+                                <li data-filter=".wd">Website Development</li>
+                                <li data-filter=".sd">Software Development</li>
+                                <li data-filter=".">Python</li>
+                            </ul>
+                        </div>
+
+                        <br><br>
+                        <div class="work-nav">
+                            <ul>
+                                <li data-filter=".sql">SQL</li>
+                                <li data-filter=".r">R</li>
+                                <li data-filter=".c++">C++</li>
+                                <li data-filter=".java">Java</li>
+                                <li data-filter=".html">HTML</li>
+                            </ul>
+                        </div>
+-->
+                        <!--<a href="portfolio.html" class="inline-btn">View All</a>-->
+                    </div>
                 </div>
             </div>
-            <div class="row work-lists mt-none-30">
+
+
+
+            <!--first project with modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+            <!--my work area modal-->
+            <!--self driving car -->
+            <div class="modal fade" id="selfdriving" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <div class="modal-content">
+                        <div class="modal-overlay">
+                            <div class="modal-header">
+                                <h5 class="wechattext"  id="selfdriving">Self-Driving Car</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="white3">
+                                <br>Since I’m very interested in the self-driving car industry, I used Python to create a Convolution Neural Networks (CNN) model to simulate a self-driving car. It’s very similar to the ongoing self-driving experiments conducted by Tesla, Google, Uber, and so on. My process is simpler, but the idea is the same.
+                                <br><br>
+                                1. Used a self-driving simulator provided by Udacity to generate the data.
+                                <br><br>
+                                2. Balanced the data and split the data into the training and validation data set.
+                                <br><br>
+                                3. Preprocessed the data and used OpenCV.
+                                <br><br>
+                                4. Used Convolution neural network CNN to create a model.
+                                <br><br>
+                                5. Tested the model by using the code provided by Udacity.
+                                <br><br>
+                                Software used: Python, Pycharm, Git, Udacity self-driving simulator
+                                <br><br>
+                                Packages used: tensorflow, keras, sklearn, cv2, pandas, numpy, os, matplotlib,
+                                imgaug
+                                <br><br>
+                                These are simplified steps. Click the "Details" button for more details or the "Code" button to see the code of this project.
+                                <br><br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <a href="https://github.com/jasonfangmagic/Computer_Vision/tree/master/Computer%20Vision/Self_Driving" target="_blank" type="button" class="site-btn site-btn__borderd">Code</a>
+                                <a href=project1.html type="button" class="site-btn site-btn__borderd">Details</a>
+                                <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--self driving img-->
+            <div class="row work-lists mt-none-30" >
                 <div class="col-xl-4 col-lg-6 grid-sizer"></div>
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 dl cv">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection1" href="https://www.youtube.com/embed/QTT101GCqEE" >
-                                <img src="static/picture/m-1.png" alt="">
-                            </a>
+
+                            <img src="static/picture/selfdriving0.png" alt="" data-toggle="modal" data-target="#selfdriving">
+
                         </div>
                         <div class="content mt-25">
-                            <h3>Paper Car</h3>
-                            <span>Magic, Close-up Magic</span>
+                            <h3>Self-driving Car</h3>
+                            <span>Deep Learning, Computer Vision</span>
                         </div>
                     </div>
                 </div>
 
+                <!--first project with modal end !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
-                <!--p6-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bl">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection6" href="static/picture/bl1.jpg">
-                                <img src="static/picture/bl-1.png" alt="">
-                                <a data-rel="lightcase:myCollection6" href="static/picture/bl2.JPG">
-                                    <a data-rel="lightcase:myCollection6" href="static/picture/bl3.jpg" >
-                                        <a data-rel="lightcase:myCollection6" href="static/picture/bl4.jpg" >
-                                            <a data-rel="lightcase:myCollection6" href="static/picture/bl5.jpg" >
-                                                <a data-rel="lightcase:myCollection6" href="static/picture/bl6.jpg" >
+                <!--second project with modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--my work area modal-->
+                <!--pose estimation -->
+                <div class="modal fade" id="pose" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
 
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="pose">Football Pose Estimation</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="white4">
+                                    I did this project to help Tencent to create some educational football tutorials.
+                                    As a data scientist, I’ve applied one of the most useful tools, OpenCV, in the process.
+                                    By using OpenCV, people can track the coach’s pose and hands positions, so that they can
+                                    throw or catch the football correctly when they start learning how to play football.
+                                    his one-minute-long video is a demo of my work.
+                                    <br><br>
+                                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/poMqAE-DMq4' frameborder='0' allowfullscreen></iframe></div>
+                                    <br><br>Software used: Python, Pycharm, Git, Adobe Premiere
+                                    <br><br>
+                                    Packages used: numpy, cv2, mediapipe, uuid, os, time
+                                    <br><br>
+                                    Click the "Code" button to see the code of this project.
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="https://github.com/jasonfangmagic/Computer_Vision/tree/master/Computer%20Vision/Pose_Estimation" target="_blank" type="button" class="site-btn site-btn__borderd">Code</a>
+                                    <!-- <a href="project1.html" type="button" class="site-btn site-btn__borderd">Details</a>-->
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="content mt-25">
-                            <h3>Super Mario</h3>
-                            <span>Balloon Animals</span>
-
-                        </div>
-
                     </div>
-
                 </div>
 
+                <!--pose estimation img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 cv">
+                    <div class="work-item">
+                        <div class="thumb">
+
+                            <img src="static/picture/football.png" alt="" data-toggle="modal" data-target="#pose">
+
+                        </div>
+                        <div class="content mt-25">
+                            <h3>Football Pose Estimation</h3>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -212,329 +329,254 @@
                 <!--/*My Modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/-->
 
 
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bl bp">
-                    <div class="work-item">
-                        <div class="thumb">
+                <!--third project with modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--my work area modal-->
+                <!--IMDB -->
+                <div class="modal fade" id="imdb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
 
-                            <a data-rel="lightcase:myCollection3" href="static/picture/easter1.jpg">
-                                <img src="static/picture/easter00.png" alt="">
-                                <a data-rel="lightcase:myCollection3" href="static/picture/easter3.jpg">
-                                    <a data-rel="lightcase:myCollection3" href="static/picture/easter2.jpg" >
-                                        <a data-rel="lightcase:myCollection3" href="static/picture/easter0.jpg" >
-                                            <a data-rel="lightcase:myCollection3" href="static/picture/easter4.jpg" >
-                                                <a data-rel="lightcase:myCollection3" href="static/picture/easter5.jpg" >
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="imdb">IMDB Rating Analysis</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
 
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
+                                <div class="white4">
+                                    I used some linear regression and machine learning models to analyze an IMDB dataset
+                                    which contains 14166 movies and 72 variables. These variables are audience ratings and demographic information.
+                                    <br><br>I first created a linear regression model to find out which
+                                    variables are crucial to the movie box office.
+                                    <br><br>Then I used the Forward Stepwise Regression model and Full Model Search model to delete some variables to decrease over-fitting.
+                                    <br><br>Finally, I used the decision tree and random forest model to find
+                                    out which age group has the greatest influence on the movie rating by using the Variable Important Plot.
 
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Easter Party </h3>
-                            <span>Balloon Animals, Birthday Party</span>
-                        </div>
-                    </div>
-                </div>
+                                    <br><br>Software used: R Studio
+                                    <br><br>
+                                    Packages used: Linear Regression,  Forward Stepwise Regression, Full Model Search,
+                                    Decision Tree, Random Forest
+                                    <br><br>
+                                    Click the "Code" button to see the code of this project.
+                                </div>
 
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 fp">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection8" href="static/picture/fp1.png">
-                                <img src="static/picture/fp-1.png" alt="">
-                                <a data-rel="lightcase:myCollection8" href="static/picture/fp2.png">
-                                    <a data-rel="lightcase:myCollection8" href="static/picture/fp3.png" >
-                                        <a data-rel="lightcase:myCollection8" href="static/picture/fp4.png" >
-                                            <a data-rel="lightcase:myCollection8" href="static/picture/fp5.png" >
-                                                <a data-rel="lightcase:myCollection8" href="static/picture/fp6.png" >
-
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
-                        </div>
-
-                        <div class="content mt-25">
-                            <h3>Face Painting</h3>
-                            <span>Face Painting</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 mg st">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection4" href="https://www.youtube.com/embed/Q1pGlPdr_R0" >
-                                <img src="static/picture/cube.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Chocolate Cube</h3>
-                            <span>Magic, Stage Magic</span>
+                                <div class="modal-footer">
+                                    <a href="https://github.com/jasonfangmagic/R_Projects" target="_blank" type="button" class="site-btn site-btn__borderd">Code</a>
+                                    <!-- <a href="project1.html" type="button" class="site-btn site-btn__borderd">Details</a>-->
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bl bp">
+                <!--pose estimation img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 ml ma">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection5" href="static/picture/bp1.JPG">
-                                <img src="static/picture/bp-1.png" alt="">
-                                <a data-rel="lightcase:myCollection5" href="static/picture/bp2.JPG">
-                                    <a data-rel="lightcase:myCollection5" href="static/picture/bp3.JPG" >
-                                        <a data-rel="lightcase:myCollection5" href="static/picture/bp4.JPG" >
-                                            <a data-rel="lightcase:myCollection5" href="static/picture/bp5.JPG" >
-                                                <a data-rel="lightcase:myCollection5" href="static/picture/bp6.JPG" >
 
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
-                        </div>
+                            <img src="static/picture/imdb.png" alt="" data-toggle="modal" data-target="#imdb">
 
-                        <div class="content mt-25">
-                            <h3>Halloween Birthday Party</h3>
-                            <span>Balloon Animals, Birthday Party</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-                <!--  p6-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection2" href="https://www.youtube.com/embed/Go4ikXABOlk" >
-                                <img src="static/picture/m-2.png" alt="">
-                            </a>
                         </div>
                         <div class="content mt-25">
-                            <h3>Charge Card</h3>
-                            <span>Magic, Close-up Magic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--p7-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bp">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection7" href="static/picture/bp00.jpg">
-                                <img src="static/picture/bp000.png" alt="">
-                                <a data-rel="lightcase:myCollection7" href="static/picture/bp02.jpg">
-                                    <a data-rel="lightcase:myCollection7" href="static/picture/bp03.jpg" >
-                                        <a data-rel="lightcase:myCollection7" href="static/picture/bp04.jpg" >
-                                            <a data-rel="lightcase:myCollection7" href="static/picture/bp05.png" >
-                                                <a data-rel="lightcase:myCollection7" href="static/picture/bp06.jpg" >
-
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
-                        </div>
-
-                        <div class="content mt-25">
-                            <h3>Princess Birthday Party</h3>
-                            <span>Birthday Party</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!--p8-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 st mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection9" href="https://www.youtube.com/embed/ST67viNIeDw" >
-                                <img src="static/picture/m-3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Magical Flash</h3>
-                            <span>Magic, Stage Magic</span>
+                            <h3>IMDB Rating Analysis</h3>
+                            <span>Machine Learning, Marketing Analytics</span>
                         </div>
                     </div>
                 </div>
 
 
-                <!--p10-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 st mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection10" href="https://www.youtube.com/embed/H2kjP0iVWDw" >
-                                <img src="static/picture/m-15.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Goldfish From Card Box</h3>
-                            <span>Magic, Stage Magic</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!--p11-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg st">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection11" href="https://www.youtube.com/embed/nSCgsLzLtHE" >
-                                <img src="static/picture/m-10.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Solve Rubik's cube in 1s</h3>
-                            <span>Magic, Close-up Magic, Stage Magic</span>
-                        </div>
-                    </div>
-                </div>
+                <!--third project end-->
 
-                <!--p12-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bp bl">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection12" href="static/picture/h-1.JPG">
-                                <img src="static/picture/h-01.png" alt="">
-                                <a data-rel="lightcase:myCollection12" href="static/picture/h-2.JPG">
-                                    <a data-rel="lightcase:myCollection12" href="static/picture/h-3.JPG" >
-                                        <a data-rel="lightcase:myCollection12" href="static/picture/h-4.JPG" >
-                                            <a data-rel="lightcase:myCollection12" href="static/picture/h-5.JPG" >
-                                                <a data-rel="lightcase:myCollection12" href="static/picture/h-6.JPG" >
+                <!-- fourth project start-->
+                <!--my work area modal-->
+                <!--ibm -->
+                <div class="modal fade" id="ibm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
 
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
-                        </div>
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="ibm">IMDB Rating Analysis</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
 
-                        <div class="content mt-25">
-                            <h3>Halloween Party</h3>
-                            <span>Birthday Party</span>
+                                <div class="white4">
+                                    Natural Language Processing is playing an important role in the machine learning field. I’d like to share a powerful NLP tool which is provided by IBM, IBM Watson. Watson is a question-answering computer system capable of answering questions posed in natural language, developed in IBM's DeepQA project by a research team led by principal investigator David Ferrucci.
+                                    <br><br> <div class="center3"> <img src="static/picture/ibm.png" alt=""></div>
+                                    <br>It can easily be used in Python. You can just install ibm_watson and import the module that you want to use. There are 4 modules that I use very often, Text to Speech, Speech to Text, Translation, and Tone Analysis. Text to Speech is very accurate because the computer can read every single word. While Speech to Text accuracy is not that high, even you use the audio that is converted by Text to Speech. Translation provides a very decent service but not as good as google translation. Tone Analysis could help you analyze your sentence’s tone. It’s been used in interpreting reviews and Twitter content. This powerful tool can help you find out whether the comment is positive or negative.
 
-                        </div>
+                                    <br><br>Software used: IBM Watson, Google Colaboratory
 
-                    </div>
+                                    <br><br>I have created a demo document in Google Colaboratory.
+                                    Click the "Code" button to see the code of this project.
+                                </div>
 
-                </div>
-
-                <!--p13-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg st">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection13" href="https://www.youtube.com/embed/ygUa1SpKYjw" >
-                                <img src="static/picture/m-5.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Overcome Gravity</h3>
-                            <span>Magic, Close-up Magic, Stage Magic</span>
+                                <div class="modal-footer">
+                                    <a href="https://colab.research.google.com/drive/1MmEgJmjXOPlF1iy5Keg2Rog358nerwxX" target="_blank" type="button" class="site-btn site-btn__borderd">Code</a>
+                                    <!-- <a href="project1.html" type="button" class="site-btn site-btn__borderd">Details</a>-->
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!--p14-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bl">
+                <!--ibm img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 ml nlp">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection14" href="static/picture/b-1.jpg">
-                                <img src="static/picture/b-01.png" alt="">
-                                <a data-rel="lightcase:myCollection14" href="static/picture/b-2.jpg">
-                                    <a data-rel="lightcase:myCollection14" href="static/picture/b-3.jpg" >
-                                        <a data-rel="lightcase:myCollection14" href="static/picture/b-4.jpg" >
-                                            <a data-rel="lightcase:myCollection14" href="static/picture/b-5.jpg" >
-                                                <a data-rel="lightcase:myCollection14" href="static/picture/b-6.jpg" >
 
-                                                </a>
-                                            </a>
-                                        </a>
-                                    </a>
-                                </a>
-                            </a>
-                        </div>
+                            <img src="static/picture/ibm0.png" alt="" data-toggle="modal" data-target="#ibm">
 
-                        <div class="content mt-25">
-                            <h3>Balloon Animals</h3>
-                            <span>Balloon Animals</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!--p15-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection15" href="https://www.youtube.com/embed/ja21JA8klnE" >
-                                <img src="static/picture/m-6.png" alt="">
-                            </a>
                         </div>
                         <div class="content mt-25">
-                            <h3>Lost Airpod Pro</h3>
-                            <span>Magic, Close-up Magic</span>
+                            <h3>IBM Watson</h3>
+                            <span>Machine Learning, NLP</span>
                         </div>
                     </div>
                 </div>
 
-                <!--p16-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection16" href="https://www.youtube.com/embed/yKuqHek3Hq0" >
-                                <img src="static/picture/m-11.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Mirage</h3>
-                            <span>Magic, Close-up Magic</span>
+
+
+                <!--fourth project end-->
+
+                <!-- fifth project start-->
+                <!--my work area modal-->
+                <!--ibm -->
+                <div class="modal fade" id="web" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="web">Web Development HTML</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="white4">
+                                    My personal website developed by using HTML, CSS and JavaScript.
+                                    As a programmer and magician, I need two separate websites for two kinds of audiences, but
+                                    I also need to integrate these two websites together. It's a simple static website,
+                                    but I developed this website by myself. A lot of skills are required to build this website.
+
+                                    <br><br>Software used: HTML, CSS, JavaScript, Intellij IDEA, Git, Adobe Photoshop, Adobe Premiere
+
+                                    <br><br>Click the "Details" button for more details or
+                                    click the "Code" button to see the code of this project
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="https://github.com/jasonfangmagic/Website" target="_blank" type="button" class="site-btn site-btn__borderd">Code</a>
+                                    <a href="project3.html" type="button" class="site-btn site-btn__borderd">Details</a>
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!--p17-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
+                <!--ibm img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 dm">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection17" href="https://www.youtube.com/embed/jJ-ObA08qCw" >
-                                <img src="static/picture/m-9.png" alt="">
-                            </a>
+
+                            <img src="static/picture/myweb00.png" alt="" data-toggle="modal" data-target="#web">
+
                         </div>
                         <div class="content mt-25">
-                            <h3>Safeway Paper Clip</h3>
-                            <span>Magic, Close-up Magic</span>
+                            <h3>Web Development HTML</h3>
+                            <span>Digital Marketing</span>
                         </div>
                     </div>
                 </div>
 
-                <!--p18-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 bl">
+
+
+                <!--fifth project end-->
+
+
+                <!-- six project start-->
+                <!--my work area modal-->
+                <!--omni -->
+                <div class="modal fade" id="omni" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="omni">Web Development WordPress</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="white4">
+                                    OmniFun is a kid’s playground located in Maryland, Gaithersburg.
+                                    Because other managers don’t know HTML, I chose to use WordPress to build this website.
+                                    This website is designed to show parents the pictures, pricing, and policies.
+                                    I also implemented Google Analytics which can track online viewers' information.
+                                    <br><br> <div class="center3"> <img src="static/picture/omni1.png" alt=""></div>
+                                    <br><br>Software Used: WordPress, Google Analytics
+                                    <br><br>Click the "Visit" button to visit the website or click the "Details‘ button for more details.
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="https://myomnifun.com/" target="_blank" type="button" class="site-btn site-btn__borderd">Visit</a>
+                                    <a href="project2.html" type="button" class="site-btn site-btn__borderd">Details</a>
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--omni img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 ma dm">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection18" href="static/picture/b-7.jpg">
-                                <img src="static/picture/b-07.png" alt="">
-                                <a data-rel="lightcase:myCollection18" href="static/picture/b-8.jpg">
-                                    <a data-rel="lightcase:myCollection18" href="static/picture/b-9.jpg" >
-                                        <a data-rel="lightcase:myCollection18" href="static/picture/b-10.jpg" >
-                                            <a data-rel="lightcase:myCollection18" href="static/picture/b-11.jpg" >
-                                                <a data-rel="lightcase:myCollection18" href="static/picture/b-12.jpg" >
 
+                            <img src="static/picture/omni0.png" alt="" data-toggle="modal" data-target="#omni">
+
+                        </div>
+                        <div class="content mt-25">
+                            <h3>Web Development WordPress</h3>
+                            <span>Marketing Analytics, Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--sixth project end-->
+
+
+                <!--POSTERS-->
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 dm">
+                    <div class="work-item">
+                        <div class="thumb">
+                            <a data-rel="lightcase:myCollection7" href="static/picture/flyer2.png">
+                                <img src="static/picture/poster0.png" alt="">
+                                <a data-rel="lightcase:myCollection7" href="static/picture/flyer1.png">
+                                    <a data-rel="lightcase:myCollection7" href="static/picture/poster1.png" >
+                                        <a data-rel="lightcase:myCollection7" href="static/picture/poster1a.JPG" >
+                                            <a data-rel="lightcase:myCollection7" href="static/picture/poster2.png" >
+                                                <a data-rel="lightcase:myCollection7" href="static/picture/poster2a.JPG" >
+                                                    <a data-rel="lightcase:myCollection7" href="static/picture/pad.png" >
+                                                        <a data-rel="lightcase:myCollection7" href="static/picture/pada.JPG" >
+                                                        </a>
+                                                    </a>
                                                 </a>
                                             </a>
                                         </a>
@@ -544,8 +586,8 @@
                         </div>
 
                         <div class="content mt-25">
-                            <h3>Balloon Art</h3>
-                            <span>Balloon Animals</span>
+                            <h3>Graphic Design</h3>
+                            <span>Digital Marketing, Graphic Design</span>
 
                         </div>
 
@@ -553,98 +595,103 @@
 
                 </div>
 
-                <!--p19-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 st mg">
+
+                <!--mailchimp start-->
+                <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="mail">MailChimp Newsletter</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="white4">
+                                    Mailchimp is an American marketing automation platform and email marketing service.
+                                    Since I took over the email marketing, our opening rate has increased from 10% to almost 30%.
+                                    I usually design a poster at first and then implement some pictures and call-to-action button.
+                                    <br><br> <div class="center3"> <img src="static/picture/omnimail1.png" alt=""></div>
+                                    <br><br>Software used: MailChimp, Adobe Photoshop
+                                    <!--<br><br>Click the "Visit" button to visit the website or click the "Details‘ button for more details.-->
+                                </div>
+
+                                <div class="modal-footer">
+                                    <!--<a href="https://myomnifun.com/" target="_blank" type="button" class="site-btn site-btn__borderd">Visit</a>
+                                    <a href="project2.html" type="button" class="site-btn site-btn__borderd">Details</a>-->
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--mail img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 dm">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection19" href="https://www.youtube.com/embed/KNS6vrjIRn4" >
-                                <img src="static/picture/m-12.png" alt="">
-                            </a>
+
+                            <img src="static/picture/omnimail0.png" alt="" data-toggle="modal" data-target="#mail">
+
                         </div>
                         <div class="content mt-25">
-                            <h3>Flying Noodles</h3>
-                            <span>Magic, Stage Magic</span>
+                            <h3>MailChimp Newsletter</h3>
+                            <span>Email Marketing, Digital Marketing</span>
                         </div>
                     </div>
                 </div>
 
-                <!--p20-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
+                <!--mailchimp end-->
+
+                <!--social media start-->
+                <div class="modal fade" id="sm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+
+                        <div class="modal-content">
+                            <div class="modal-overlay">
+                                <div class="modal-header">
+                                    <h5 class="wechattext"  id="sm">Social Media Management</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="white4">
+                                    I had managed some company social media accounts on different platforms including Facebook, Instagram, YouTube
+                                    and so on. We have reached more than 20k people on Facebook.
+                                    <br><br> <div class="center3"> <img src="static/picture/fb.png" alt=""></div>
+                                    <br><br>Software used: Facebook, Instagram, YouTube
+                                    <br><br>Click the "Visit" button to visit the social media
+                                </div>
+
+                                <div class="modal-footer">
+                                    <a href="https://www.facebook.com/omnifuninc" target="_blank" type="button" class="site-btn site-btn__borderd">Visit</a>
+                                    <!--<a href="project2.html" type="button" class="site-btn site-btn__borderd">Details</a>-->
+                                    <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--mail img-->
+
+                <div class="col-xl-4 col-lg-6 grid-item mb-30 dm">
                     <div class="work-item">
                         <div class="thumb">
-                            <a data-rel="lightcase:myCollection20" href="https://www.youtube.com/embed/7O_TOzXe1SU" >
-                                <img src="static/picture/m-8.png" alt="">
-                            </a>
+
+                            <img src="static/picture/sm.png" alt="" data-toggle="modal" data-target="#sm">
+
                         </div>
                         <div class="content mt-25">
-                            <h3>More Mints</h3>
-                            <span>Magic, Close-up Magic</span>
+                            <h3>Social Media Management</h3>
+                            <span>Digital Marketing, Social Media</span>
                         </div>
                     </div>
                 </div>
-
-                <!--p21-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection21" href="https://www.youtube.com/embed/qTemmNPxcEg" >
-                                <img src="static/picture/m-14.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Tic Tac</h3>
-                            <span>Magic, Close-up Magic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--p22-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection22" href="https://www.youtube.com/embed/tYD-4ovn-lc" >
-                                <img src="static/picture/m-13.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>M&M</h3>
-                            <span>Magic, Close-up Magic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--p23-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 cl mg st">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection23" href="https://www.youtube.com/embed/Ta-5nda6BiU" >
-                                <img src="static/picture/m-4.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Watch Your Ring</h3>
-                            <span>Magic, Close-up Magic, Stage Magic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--p24-->
-                <div class="col-xl-4 col-lg-6 grid-item mb-30 mg st">
-                    <div class="work-item">
-                        <div class="thumb">
-                            <a data-rel="lightcase:myCollection24" href="https://www.youtube.com/embed/NPs645dnFZE" >
-                                <img src="static/picture/m-7.png" alt="">
-                            </a>
-                        </div>
-                        <div class="content mt-25">
-                            <h3>Infinite Milk</h3>
-                            <span>Magic, Stage Magic</span>
-                        </div>
-                    </div>
-                </div>
-
-
-
                 <!--box1-->
                 <!-- <div class="col-xl-4 col-lg-6 grid-item mb-30 ui web">
                      <div class="work-item">
@@ -661,8 +708,14 @@
                  </div>-->
                 <!--box1-->
             </div>
+           <!-- <div class="row">
+                <div class="col-xl-12 text-center">
+                    <a href="../P/portfolio.html" class="site-btn mt-60">View All</a>
+                </div>
+            </div>-->
         </div>
     </section>
+
     <!-- work area end -->
 
     <!-- testimonial area start -->
@@ -730,7 +783,7 @@
     <!-- testimonial area end -->
 
     <!-- cta area start -->
-<!--    <section class="cta-area mt-190">
+    <section class="cta-area mt-190">
         <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
         <div class="container">
             <div class="row">
@@ -740,19 +793,17 @@
                             <div class="col-xl-7">
                                 <h2 class="mb-25">Let's work together on
                                     your next project</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s,</p>
                             </div>
-                            <div class="col-xl-5 align-self-center text-right">
-                                <a href="contact.html" class="site-btn">Let's Talk</a>
+                            <div class="center3 hero-btns2">
+                                <a href="contact.html" class="site-btn">Hire Me</a>
+                                <a href="https://drive.google.com/file/d/1eEhSkfdpGwdh0pKaw8jbYAH6LWIqiRQA/view?usp=sharing" target="_blank" download="Jason Resume.pdf" class="site-btn site-btn__borderd">Resume</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
     <!-- cta area end -->
     <!--<div class="hearts">
         <img src="static/picture/hearts.png" alt="">
@@ -859,7 +910,6 @@
                         <a href="https://www.instagram.com/jasonfangmagic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/jasonfangmagic/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/jasonfangmagic" target="_blank"><i class="fab fa-github"></i></a>
-
                     </div>
                 </div>
                 <div class="col-md-6 my-auto text-right">
