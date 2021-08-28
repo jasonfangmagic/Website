@@ -285,7 +285,7 @@ p, li, span {
 }
 
 .wechattext {
-  font-size: 28px;
+  font-size: 23px;
 /*  text-transform: capitalize;*/
   color: #ffffff;
   -webkit-transition: 0.3s;
@@ -298,6 +298,9 @@ p, li, span {
   text-align: center;
   padding: 5px 30px;
 }
+
+
+
 
 @media (max-width: 767px) {
   .site-btn {
