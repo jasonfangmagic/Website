@@ -49,8 +49,9 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="blog.html">Projects</a></li>
-                                    <li><a href="../E/index.html">Magician</a></li>
+                                    <!--<li><a href="service.html">Service</a></li>-->
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="../magician/index.html">Magician</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -67,14 +68,14 @@
     <!-- header end -->
 
     <!-- breadcrumb area start -->
-    <div class="breadcrumb-area mb-5">
+    <div class="breadcrumb-area mb-190">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="index.html">Home</a></li>
                         <li>-</li>
-                        <li>Self-driving Car</li>
+                        <li>Projects</li>
                     </ul>
                 </div>
             </div>
@@ -84,142 +85,122 @@
     </div>
     <!-- breadcrumb area end -->
 
-
-    <!-- service area start -->
-    <section class="blog-area2">
+    <!-- blog area start -->
+    <div class="blog-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
                     <div class="blog-wrap">
                         <div class="row">
-                            <div class="white2">
-                                   <a>     Since I’m very interested in the self-driving car industry, I used Python to create a Convolution Neural Networks (CNN) model to simulate a self-driving car. It’s very similar to the ongoing self-driving experiments conducted by Tesla, Google, Uber, and so on. My process is simpler, but the idea is the same.
-                                        <br><br>
-
-                                       <div class="col-xl-4 col-lg-6 grid-item mb-30 bl center1" >
-                                            <div class="work-item">
-                                                <div class="thumb">
-                                                    <a data-rel="lightcase:myCollection6" href="static/picture/selfdriving1.jpg">
-                                                        <img src="static/picture/selfdriving0.png" alt="">
-                                                            <a data-rel="lightcase:myCollection6" href="static/picture/selfdriving2.jpg" >
-                                                                <a data-rel="lightcase:myCollection6" href="static/picture/selfdriving3.jpg" >
-                                                                        <a data-rel="lightcase:myCollection6" href="static/picture/selfdriving4.jpg" >
-
-                                                                        </a>
-                                                                    </a>
-                                                                </a>
-                                                            </a>
-                                                        </a>
-                                                    </a>
-                                                </div>
-
-                                                <div class="content mt-25 center1">
-                                                    <h3>Project Images</h3>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        Here are the steps:
-                                        <br><br>1. Used a self-driving simulator provided by Udacity. Trained and drove a car about 10 laps and generated about 30,000 images and 10,000 rows of data.
-                                        <br><br>2. Imported the data and image into python. Created utlis file to store all of my modules.
-                                        <br><br>3. Balanced the data and split the data into the training and validation data set.
-                                        <br><br>4. Augmented the data by using imgaug package. Pan, zoom, brightness, and flip were used.
-                                        <br><br>5. Preprocessed the data and used OpenCV. Cropped the images and got out of the trees. Changed color space, resized and normalized the images.
-                                        <br><br>6. Used Convolution neural network CNN to create a model. Used sequential model Adam optimizer. Used activation function elu rather than relu. 10 layers in total, 5 convolutional layers, 1 Flatten layer, and 4 dense layers. Learning rate=0.0001. Loss function=mse
-                                        <br><br>7. Tested the model by using the code provided by Udacity. Set the Max speed to 10 mph and imported the model. Because the data was preprocessed in the training and validation parts, I also had to preprocess the data in the test. Used the model to predict the steering angle.
-
-                                        <br><br>You can click the "GitHub Code" button below to find out my code on my GitHub under the Computer Vision repository.
-
-                                        <br><br>Software used: Python, Pycharm, Git, Udacity self-driving simulator
-                                        <br><br>Packages used: tensorflow, keras, sklearn, cv2, pandas, numpy, os, matplotlib, imgaug
-                                    </a>
-                                <br><br>
-                                <div class="center">
-                                    <a href="portfolio.html" class="site-btn ">Portfolio</a>
-                                    <a href="https://github.com/jasonfangmagic/Computer_Vision/tree/master/Computer%20Vision/Self_Driving" TARGET="_blank" class="site-btn site-btn__borderd">Github Code</a>
-                                </div>
-
-                                </div>
 
 
-                    </div>
-
-            </div>
-
-    </section>
 
 
-    <!-- service area end -->
-
-    <!-- testimonial area start -->
-    <!--<div class="testimonial-area mt-120 pt-80">
-        <span class="side-shape side-shape__right side-shape__about">
-            <img src="static/picture/shape-side.png" alt="">
-        </span>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 text-right">
-                    <div class="section-heading mb-90">
-                        <h2>Testimonial</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="testimonial-shape">
-                        <img src="static/picture/testimonial-shape.png" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-8">
-                    <div class="testimonial owl-carousel">
-                        <div class="testimonial__item">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard
-                                dummy text ever since the 1500s,</p>
-                            <div class="testimonial__bottom">
-                                <h4>David</h4>
-                                <span>Marketing Manager</span>
+                            <div class="col-xl-12 mb-120">
+                                <article class="blog-item blog-item__2">
+                                    <div class="thumb">
+                                        <a href="Self-driving_Car.html">
+                                        <img src="static/picture/selfdrivingimg.png" alt="">
+                                        </a>
+                                    </div>
+                                   <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
+                                        <span class="author">Post by : Author</span>
+                                        <span class="date">12-May-2021</span>
+                                    </div>-->
+                                    <div class="blog-item__content blog-item__content--2">
+                                        <h4 class="blog-item__title blog-item__title--2">
+                                            <a href="Self-driving_Car.html">Self-driving Car</a>
+                                        </h4>
+                                        <p> Since I’m very interested in the self-driving car industry, I used Python to create a Convolution Neural Networks (CNN) model to simulate a self-driving car.
+                                            It’s very similar to the ongoing self-driving experiments conducted by Tesla, Google, Uber, and so on.
+                                            My process is simpler, but the idea is the same.</p>
+                                        <a href="Self-driving_Car.html" class="read-more">Read More.....</a>
+                                    </div>
+                                </article>
                             </div>
-                        </div>
-                        <div class="testimonial__item">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard
-                                dummy text ever since the 1500s,</p>
-                            <div class="testimonial__bottom">
-                                <h4>David</h4>
-                                <span>Marketing Manager</span>
+
+                            <!--myweb-->
+                            <div class="col-xl-12 mb-120">
+                                <article class="blog-item blog-item__2">
+                                    <div class="thumb">
+                                        <a href="Web_Development_HTML.html">
+                                            <img src="static/picture/myweb0.png" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
+                                         <span class="author">Post by : Author</span>
+                                         <span class="date">12-May-2021</span>
+                                     </div>-->
+                                    <div class="blog-item__content blog-item__content--2">
+                                        <h4 class="blog-item__title blog-item__title--2">
+                                            <a href="Web_Development_HTML.html">Web Development HTML</a>
+                                        </h4>
+                                        <p> My personal website developed by using HTML, CSS and JavaScript.
+                                            As a programmer and magician, I need two separate websites for two kinds of audiences, but
+                                            I also need to integrate these two websites together. It's a simple static website,
+                                            but I developed this website by myself. A lot of skills are required to build this website.
+                                        </p>
+                                        <a href="Web_Development_HTML.html" class="read-more">Read More.....</a>
+                                    </div>
+                                </article>
                             </div>
+
+
+
+
+
+                           <!-- omni-->
+                            <div class="col-xl-12 mb-120">
+                                <article class="blog-item blog-item__2">
+                                    <div class="thumb">
+                                        <a href="Web_Development_WordPress.html">
+                                            <img src="static/picture/omni00.png" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
+                                         <span class="author">Post by : Author</span>
+                                         <span class="date">12-May-2021</span>
+                                     </div>-->
+                                    <div class="blog-item__content blog-item__content--2">
+                                        <h4 class="blog-item__title blog-item__title--2">
+                                            <a href="Web_Development_WordPress.html">Web Development WordPress</a>
+                                        </h4>
+                                        <p> OmniFun is a kid’s playground located in Maryland, Gaithersburg.
+                                            Because other managers don’t know HTML, I chose to use WordPress to build this website.
+                                            This website is designed to show parents the pictures, pricing, and policies. I also implemented Google
+                                            Analytics which can track online viewers' information.</p>
+                                        <a href="Web_Development_WordPress.html" class="read-more">Read More.....</a>
+                                    </div>
+                                </article>
+                            </div>
+
+
+
+
+
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-190">
-                <div class="col-xl-12">
-                    <div class="brand owl-carousel">
-                        <div class="brand__item">
-                            <img src="static/picture/b-1.png" alt="">
-                        </div>
-                        <div class="brand__item">
-                            <img src="static/picture/b-2.png" alt="">
-                        </div>
-                        <div class="brand__item">
-                            <img src="static/picture/b-3.png" alt="">
-                        </div>
-                        <div class="brand__item">
-                            <img src="static/picture/b-4.png" alt="">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <ul class="blog-nav mt-75">
+                                    <li><a href="#0"><i class="far fa-angle-left"></i></a></li>
+                                    <li><a href="#0" class="active">1</a></li>
+                                    <li><a href="#0">2</a></li>
+                                    <li><a href="#0">3</a></li>
+                                    <li><a href="#0">4</a></li>
+                                    <li><a href="#0">5......</a></li>
+                                    <li><a href="#0"><i class="far fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>-->
-    <!-- testimonial area end -->
+    </div>
+    <!-- blog area end -->
 
-    <!-- cta area start -->
-   <!-- <section class="cta-area mt-190">
+    <!--  cta area start-->
+    <section class="cta-area mt-190">
         <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
         <div class="container">
             <div class="row">
@@ -229,23 +210,20 @@
                             <div class="col-xl-7">
                                 <h2 class="mb-25">Let's work together on
                                     your next project</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s,</p>
+                                <p></p>
                             </div>
                             <div class="col-xl-5 align-self-center text-right">
-                                <a href="contact.html" class="site-btn">Let's Talk</a>
+                                <a href="contact.html" class="site-btn">Hire Me</a>
+                                <a href="https://drive.google.com/file/d/1eEhSkfdpGwdh0pKaw8jbYAH6LWIqiRQA/view?usp=sharing" target="_blank" download="Jason Resume.pdf" class="site-btn site-btn__borderd">Resume</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
-    <!-- cta area end -->
- <!--   <div class="hearts">
-    <img src="static/picture/clubs.png" alt="">
-    </div>-->
+    </section>
+    <!-- cta area end-->
+
     <!--footer-->
     <!--  /*wechat id*/-->
     <div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -297,6 +275,7 @@
                     </div>
 
                     <div class="modal-footer">
+
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -325,6 +304,7 @@
                     </div>
 
                     <div class="modal-footer">
+
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -346,7 +326,6 @@
                         <a href="https://www.instagram.com/jasonfangmagic/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/jasonfangmagic/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/jasonfangmagic" target="_blank"><i class="fab fa-github"></i></a>
-
                     </div>
                 </div>
                 <div class="col-md-6 my-auto text-right">
@@ -358,6 +337,7 @@
         </div>
     </footer>
     <!-- footer end -->
+
     <!--========= JS Here =========-->
     <script src="static/js/jquery-2.2.4.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
