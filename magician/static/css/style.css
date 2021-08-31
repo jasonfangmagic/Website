@@ -1921,6 +1921,11 @@ h6 {
   z-index: 9;
 }
 
+.testlogo {
+  width: 40px;
+  height: 300px;
+}
+
 /* Navigation css */
 .menu-area {
   display: -ms-flexbox;
