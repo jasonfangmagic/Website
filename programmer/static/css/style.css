@@ -2125,7 +2125,7 @@ input.form-control-sm {
 }
 .hero-area .shape {
   position: absolute;
-  z-index: -20;
+  z-index: -9;
 }
 .hero-area .shape__left-top {
   left: 50px;
@@ -2203,7 +2203,7 @@ input.form-control-sm {
 }
 /*avater position !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero-area .hero-avater {
-  margin-top: 304px;
+  margin-top: 330px;
 
 }
 @media (max-width: 1199px) {
@@ -2290,7 +2290,7 @@ input.form-control-sm {
 
 .hero-content {
   position: relative;
-  margin-top: 225px;
+  margin-top: 250px;
   margin-bottom: 265px;
   margin-right: 20px;
 
@@ -2427,6 +2427,7 @@ input.form-control-sm {
   color: #ffffff;
   background: #6B84FF;
 }
+
 
 /* About css */
 /*about me position !!!!!!!!!!!!!!!!!!!!!!*/
