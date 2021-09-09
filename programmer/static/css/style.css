@@ -138,23 +138,6 @@ p, li, span {
   color: #ffffff;
 }
 
-.white2 {
-  color: #c9c9c9;
-}
-
-.white3 {
-  color: #c9c9c9;
-  position: relative;
-  padding: 0px 20px;
-}
-
-.white4 {
-  color: #c9c9c9;
-  position: relative;
-  padding: 25px 20px;
-}
-
-
 .f-right {
   float: right;
 }
@@ -268,22 +251,6 @@ p, li, span {
   /*margin-right: 20px;*/
 }
 
-.site-btn5 {
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #ffffff;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  z-index: 2;
-  position: relative;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: left;
-  max-width: 95%;
-  top: 35px;
-  /*margin-right: 20px;*/
-}
-
 .wechattext {
   font-size: 23px;
 /*  text-transform: capitalize;*/
@@ -294,13 +261,9 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
-  /*max-width: 95%;*/
   text-align: center;
   padding: 5px 30px;
 }
-
-
-
 
 @media (max-width: 767px) {
   .site-btn {
@@ -434,7 +397,6 @@ p, li, span {
   position: absolute;
   left: 0;
   top: -150px;
-  z-index: -10;
 }
 @media (max-width: 1650px) {
   .side-shape {
@@ -1959,6 +1921,11 @@ h6 {
   z-index: 9;
 }
 
+.testlogo {
+  width: 40px;
+  height: 300px;
+}
+
 /* Navigation css */
 .menu-area {
   display: -ms-flexbox;
@@ -2428,7 +2395,6 @@ input.form-control-sm {
   background: #6B84FF;
 }
 
-
 /* About css */
 /*about me position !!!!!!!!!!!!!!!!!!!!!!*/
 .about-area {
@@ -2463,7 +2429,6 @@ input.form-control-sm {
   color: #E2E2E3;
   font-weight: 400;
   margin-bottom: 15px;
-
 }
 .skill__box .progress {
   height: 10px;
@@ -2535,14 +2500,6 @@ input.form-control-sm {
   position: absolute;
   right: -50px;
   top: -250px;
-  z-index: -9;
-}
-
-.service-shape2 {
-  position: absolute;
-  right: -50px;
-  top: -300px;
-  z-index: -9;
 }
 
 /*test*/
@@ -2912,13 +2869,7 @@ input.form-control-sm {
 /* blog css */
 .blog-area {
   position: relative;
-  top: -120px;
 }
-
-.blog-area2 {
-  position: relative;
-}
-
 .blog-area__single-page .side-shape {
   right: 0;
   bottom: -50px;
@@ -3879,8 +3830,9 @@ body {
 
 }
 
-.hero-btns2 {
-  margin-top: 150px;
+.site-logo1{
+  height: 300px;
+  width: 750px;
 }
 
 .center1 {
