@@ -1275,8 +1275,10 @@ body.is-preload #bg:before {
 	left: calc(50% - 1px);
 	width: 1px;
 	height: calc(3.5rem + 1px);
-	background: #ffffff;
+	background: #FFFFFF;
 }
+
+/*mark*/
 
 #header > :first-child {
 	margin-top: 0;
@@ -1295,6 +1297,8 @@ body.is-preload #bg:before {
 
 }
 
+/*mark*/
+
 #header .logo .icon:before {
 	font-size: 2rem;
 }
@@ -1306,6 +1310,7 @@ body.is-preload #bg:before {
 	border-bottom-width: 1px;
 	max-width: 100%;
 }
+/*mark*/
 
 #header .content .inner {
 	-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1340,9 +1345,10 @@ body.is-preload #bg:before {
 	margin-bottom: 0;
 	list-style: none;
 	padding-left: 0;
-	border: solid 1px #ffffff;
+	border: solid 1px #FFFFFF;
 	border-radius: 4px;
 }
+/*mark*/
 
 #header nav ul li {
 	padding-left: 0;
@@ -1366,6 +1372,7 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li a:hover {
+	/*background-color: #6B84FF;*/
 	background-color: rgba(255, 255, 255, 0.075);
 }
 
