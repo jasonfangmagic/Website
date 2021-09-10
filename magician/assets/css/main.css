@@ -1655,3 +1655,10 @@ body.is-article-visible #footer {
 body.is-preload #footer {
 	opacity: 0;
 }
+
+.fa{
+	position: relative;
+	font-size: 35px;
+	text-align: center;
+	top: 8px;
+}

@@ -1292,6 +1292,7 @@ body.is-preload #bg:before {
 	line-height: 5.5rem;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
+
 }
 
 #header .logo .icon:before {
@@ -1654,4 +1655,11 @@ body.is-article-visible #footer {
 
 body.is-preload #footer {
 	opacity: 0;
+}
+
+.fa{
+	position: relative;
+	font-size: 35px;
+	text-align: center;
+	top: 8px;
 }
