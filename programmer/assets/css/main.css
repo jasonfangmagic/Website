@@ -1135,7 +1135,7 @@ button {
 	-webkit-transition-delay: 0.75s;
 	-ms-transition-delay: 0.75s;
 	transition-delay: 0.75s;
-	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+	/*background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");*/
 	background-size: auto,
 	256px 256px;
 	background-position: center,
@@ -1154,7 +1154,7 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url("../../images/bg.jpg");
+	background-image: url("../../images/bg4.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1250,10 +1250,10 @@ body.is-preload #bg:before {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	/*background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);*/
 	max-width: 100%;
 	text-align: center;
 }
@@ -1275,10 +1275,8 @@ body.is-preload #bg:before {
 	left: calc(50% - 1px);
 	width: 1px;
 	height: calc(3.5rem + 1px);
-	background: #FFFFFF;
+	background: #ffffff;
 }
-
-/*mark*/
 
 #header > :first-child {
 	margin-top: 0;
@@ -1294,10 +1292,7 @@ body.is-preload #bg:before {
 	line-height: 5.5rem;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
-
 }
-
-/*mark*/
 
 #header .logo .icon:before {
 	font-size: 2rem;
@@ -1310,7 +1305,6 @@ body.is-preload #bg:before {
 	border-bottom-width: 1px;
 	max-width: 100%;
 }
-/*mark*/
 
 #header .content .inner {
 	-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
@@ -1345,10 +1339,9 @@ body.is-preload #bg:before {
 	margin-bottom: 0;
 	list-style: none;
 	padding-left: 0;
-	border: solid 1px #FFFFFF;
+	border: solid 1px #ffffff;
 	border-radius: 4px;
 }
-/*mark*/
 
 #header nav ul li {
 	padding-left: 0;
@@ -1372,7 +1365,6 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li a:hover {
-	/*background-color: #6B84FF;*/
 	background-color: rgba(255, 255, 255, 0.075);
 }
 
@@ -1670,3 +1662,16 @@ body.is-preload #footer {
 	text-align: center;
 	top: 8px;
 }
+
+.picture{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: auto;
+	width: 100%;
+	height: auto;
+	z-index: -9999;
+
+}
+
