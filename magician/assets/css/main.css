@@ -1662,3 +1662,8 @@ body.is-preload #footer {
 	text-align: center;
 	top: 8px;
 }
+
+.picture{
+	margin-right: auto;
+	margin-left: auto;
+}
