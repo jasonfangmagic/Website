@@ -285,8 +285,8 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
   text-align: center;
-  padding: 5px 30px;
 }
 
 @media (max-width: 767px) {

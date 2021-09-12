@@ -251,9 +251,10 @@ p, li, span {
   /*margin-right: 20px;*/
 }
 
+
 .wechattext {
   font-size: 23px;
-/*  text-transform: capitalize;*/
+  /*  text-transform: capitalize;*/
   color: #ffffff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -261,9 +262,10 @@ p, li, span {
   z-index: 2;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
+  padding: 5px;
   text-align: center;
-  padding: 5px 30px;
 }
+
 
 @media (max-width: 767px) {
   .site-btn {
