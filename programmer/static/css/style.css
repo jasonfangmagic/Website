@@ -137,6 +137,33 @@ p, li, span {
 .white {
   color: #ffffff;
 }
+.white3 {
+  color: #B0B0B2;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.white4 {
+  color: #B0B0B2;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.white2 {
+  color: #B0B0B2;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  margin-bottom: 5%;
+}
+
 
 .f-right {
   float: right;
@@ -397,6 +424,7 @@ p, li, span {
   position: absolute;
   left: 0;
   top: -150px;
+  z-index: -99;
 }
 @media (max-width: 1650px) {
   .side-shape {
@@ -2500,18 +2528,21 @@ input.form-control-sm {
   position: absolute;
   right: -50px;
   top: -250px;
+  z-index: -99;
 }
 
 /*test*/
 @media (max-width: 1650px) {
   .service-shape {
     right: -40px;
+    z-index: -99;
   }
 }
 @media (max-width: 1300px) {
   .service-shape {
     right: -15px;
     width: 160px;
+    z-index: -99;
   }
 }
 
@@ -2553,6 +2584,7 @@ input.form-control-sm {
 .service-shape__left {
   right: auto;
   left: -20px;
+  z-index: -99;
 }
 
 .work-area {
