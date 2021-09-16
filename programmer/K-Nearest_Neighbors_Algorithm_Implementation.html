@@ -2,6 +2,7 @@
 <html class="no-js" lang="zxx">
 
 <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KN6DXRFLS"></script>
     <script>
@@ -12,7 +13,7 @@
         gtag('config', 'G-1KN6DXRFLS');
     </script>
 
-    <!--========= Required meta tags =========-->
+    <!--========= Required meta tags s=========-->
     <meta charset="utf-8">
     <meta  http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -60,7 +61,6 @@
                                     <li><a href="home">Home</a></li>
                                     <li><a href="about">About</a></li>
                                     <li><a href="portfolio">Portfolio</a></li>
-                                    <!--<li><a href="service.html">Service</a></li>-->
                                     <li><a href="projects">Projects</a></li>
                                     <!--<li><a href="../magician/home">Magician</a></li>-->
                                     <li><a href="contact">Contact</a></li>
@@ -79,14 +79,14 @@
     <!-- header end -->
 
     <!-- breadcrumb area start -->
-    <div class="breadcrumb-area mb-60">
+    <div class="breadcrumb-area mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li>Projects</li>
+                        <li>K-Nearest Neighbors<br> Algorithm Implementation </li>
                     </ul>
                 </div>
             </div>
@@ -96,112 +96,122 @@
     </div>
     <!-- breadcrumb area end -->
 
-    <!-- blog area start -->
-    <div class="blog-area">
+
+    <!-- service area start -->
+    <section class="blog-area2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
                     <div class="blog-wrap">
                         <div class="row">
+                            <div class="white2">
+                                   <a>This is the process of how I implemented a K-Nearest Neighbors algorithm from scratch. K-Nearest Neighbors is one of the most popular machine learning models. To understand how it really works, I implemented the algorithm from scratch. In the end, I compared my KNN model to sklearn’s KNN model. The accuracies are almost the same.
+                                       <br><br>
+                                       By defining the euclidean distance, we could find the nearest neighbors of a data point. However, if we only use the euclidean distance function, we can only solve two-dimension features problems. I chose to use NumPy square root to solve this problem.
+                                       <br><br>
+                                       During the implementation process,  I also defined the confidence of the vote result, so that I can see the wrong predictions’ confidences. .
+                                       <br><br> <br><br> <div class="center3"> <img src="static/picture/knn1.png" alt="" height="450px" width="600px" ></div>
+
+                                       <br><br>Also, I wanted to compare my KNN model with the sklearn KNN model. I used a dataset from UCI Machine Learning Repository to test my accuracy.
+                                       <br><br> <div class="center3"> <img src="static/picture/knn2.png" alt="" height="450px" width="600px" ></div>
+
+                                       <br><br>Run a For Loop for 25 times ,and I get an accuracy of 0.9663.
+                                       <br><br> <div class="center3"> <img src="static/picture/knn3.png" alt="" height="450px" width="600px" ></div>
 
 
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="Space_Invaders_Game">
-                                        <img src="static/picture/spaceinvaders.png" alt="">
-                                        </a>
-                                    </div>
-                                   <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                        <span class="author">Post by : Author</span>
-                                        <span class="date">12-May-2021</span>
-                                    </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="Space_Invaders_Game">Space Invaders Game</a>
-                                        </h4>
-                                        <p> This game is mainly designed by using object-oriented programming and
-                                            pygame package. I created a lot of classes to define what the player spaceship
-                                            and enemies spaceships should move in the game. What should the game react when the player controls
-                                            his spaceship.</p>
-                                        <a href="Space_Invaders_Game" class="read-more">Read More.....</a>
-                                    </div>
-                                </article>
+                                       <br><br>After I tried the KNN model from sklearn. Its accuracy is higher than mine which is 0.9857. I can’t say my version is as good as the sklearn’s model, but in this case, these two KNN models are almost identical in terms of accuracy.
+                                       <br><br> <div class="center3"> <img src="static/picture/knn4.png" alt="" height="450px" width="600px" ></div>
+
+
+                                        <br><br>Software used: Python, Pycharm, Git
+                                        <br><br>Packages used: pandas, numpy, random, matplotlib, sklearn, warnings
+
+                                       <br><br>Click the "Code" button to see the code of this project
+                                    </a>
+                                <br><br>
+                                <div class="center">
+                                    <a href="portfolio" class="site-btn ">Portfolio</a>
+                                    <a href="https://github.com/jasonfangmagic/Python_Basics/blob/master/KNN%20Algorithm%20Implementation.py" TARGET="_blank" class="site-btn site-btn__borderd">Code</a>
+                                </div>
+
+                                </div>
+
+
+                    </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- service area end -->
+
+    <!-- testimonial area start -->
+    <!--<div class="testimonial-area mt-120 pt-80">
+        <span class="side-shape side-shape__right side-shape__about">
+            <img src="static/picture/shape-side.png" alt="">
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-right">
+                    <div class="section-heading mb-90">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="testimonial-shape">
+                        <img src="static/picture/testimonial-shape.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="testimonial owl-carousel">
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
                             </div>
-
-                              <!--  2-->
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="Linear_Regression_Algorithm_Implementation">
-                                            <img src="static/picture/lr0.png" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                         <span class="author">Post by : Author</span>
-                                         <span class="date">12-May-2021</span>
-                                     </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="Linear_Regression_Algorithm_Implementation">Linear Regression Algorithm Implementation</a>
-                                        </h4>
-                                        <p> This is the process of how I implemented a linear regression algorithm from scratch, how I created the coefficient function, and how I created the R-square function. You may wonder why I didn't just import the algorithm from scikit-learn directly. The main reason is that as a data scientist, you not only need to know how to implement a model, but also you have to know the algorithm inside of your model so that you can create a better model. </p>
-                                        <a href="Linear_Regression_Algorithm_Implementation" class="read-more">Read More.....</a>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <!--  3-->
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="K-Nearest_Neighbors_Algorithm_Implementation">
-                                            <img src="static/picture/knn0.png" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                         <span class="author">Post by : Author</span>
-                                         <span class="date">12-May-2021</span>
-                                     </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="K-Nearest_Neighbors_Algorithm_Implementation">K-Nearest Neighbors Algorithm implementation</a>
-                                        </h4>
-                                        <p>his is the process of how I implemented a K-Nearest Neighbors algorithm from scratch. K-Nearest Neighbors is one of the most popular machine learning models. To understand how it really works, I implemented the algorithm from scratch. In the end, I compared my KNN model to sklearn’s KNN model. The accuracies are almost the same.</p>
-                                        <a href="K-Nearest_Neighbors_Algorithm_Implementation" class="read-more">Read More.....</a>
-                                    </div>
-                                </article>
-                            </div>
-
-
-
-
-
-
-
                         </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <ul class="blog-nav mt-75">
-                                    <li><a href="projects"><i class="far fa-angle-left"></i></a></li>
-                                    <li><a href="projects">1</a></li>
-                                    <li><a href="#0"class="active">2</a></li>
-                                    <li><a href="#0">3</a></li>
-                                    <li><a href="#0">4</a></li>
-                                    <li><a href="#0">5......</a></li>
-                                    <li><a href="#0"><i class="far fa-angle-right"></i></a></li>
-                                </ul>
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mt-190">
+                <div class="col-xl-12">
+                    <div class="brand owl-carousel">
+                        <div class="brand__item">
+                            <img src="static/picture/b-1.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-2.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-3.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- blog area end -->
+    </div>-->
+    <!-- testimonial area end -->
 
-    <!--  cta area start-->
-    <section class="cta-area mt-190">
+    <!-- cta area start -->
+   <!-- <section class="cta-area mt-190">
         <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
         <div class="container">
             <div class="row">
@@ -211,20 +221,23 @@
                             <div class="col-xl-7">
                                 <h2 class="mb-25">Let's work together on
                                     your next project</h2>
-                                <p></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s,</p>
                             </div>
                             <div class="col-xl-5 align-self-center text-right">
-                                <a href="contact" class="site-btn">Hire Me</a>
-                                <a href="https://drive.google.com/file/d/1eEhSkfdpGwdh0pKaw8jbYAH6LWIqiRQA/view?usp=sharing" target="_blank" download="Jason Resume.pdf" class="site-btn site-btn__borderd">Resume</a>
+                                <a href="contact.html" class="site-btn">Let's Talk</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- cta area end-->
-
+    </section>-->
+    <!-- cta area end -->
+ <!--   <div class="hearts">
+    <img src="static/picture/clubs.png" alt="">
+    </div>-->
     <!--footer-->
     <!--  /*wechat id*/-->
     <div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -276,7 +289,6 @@
                     </div>
 
                     <div class="modal-footer">
-
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -305,7 +317,6 @@
                     </div>
 
                     <div class="modal-footer">
-
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -338,7 +349,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
     <!--========= JS Here =========-->
     <script src="static/js/jquery-2.2.4.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
