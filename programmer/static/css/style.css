@@ -1848,6 +1848,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
 }
 
+h7 {
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.4;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+}
+
 h2 {
   font-size: 32px;
 }
