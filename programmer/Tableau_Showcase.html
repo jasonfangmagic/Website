@@ -113,6 +113,40 @@
                                     These worksheets and dashboards were published on Tableau Public and were embedded on my website.
                                     You can see some interactive worksheets and dashboards here and try them by yourself.</a>
 
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Start-up Company Case</h7>
+                                </div>
+                                <a>In this case, I was trying to solve several problems for this start-up company. The company decided to expand its stores, and it can't compete with big players in big cities, so it wanted to build a vast network in the smaller cities. The company has two separate sales regions.
+
+                                    <br><br>
+                                    Here are the problems:
+                                    <br>
+                                    1. Find the average revenue per city.
+                                    <br>
+                                    2. Find the average marketing spending per city.
+                                    <br>
+                                    3. Find the average ROI per city.
+                                    <br>
+                                    4.Identify which of the two sales regions is performing better.
+                                    <br>
+                                    4.Identify which of the 10 new locations have the best potential for the company
+                                    to invest more funds into marketing.
+                                    <br><br>
+                                    I used the group function to create two customer territories for each region, creating average revenue, average marketing spend, and average ROI. Then I used the highlight function to identify new
+                                    and old stores. Tableau has an embedded cluster function (K-means model) in its analytics tools, so I just used this very powerful tool to cluster the stores which performed differently.
+
+                                    <br><br>
+                                    To identify which of the cities are the best to expand the store, I used inner join to connect another dataset which is the
+                                    U.S. population dataset. After I combined the population information into the cluster analysis, Tableau
+                                    created three clusters by default. Then I added some trend lines (linear regression model) to the graph so that I could determine which new stores have the best potential for the company.
+
+
+
+                                    <div class='tableauPlaceholder' id='viz1632758153624' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clustering_16327578571070&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Clustering_16327578571070&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clustering_16327578571070&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632758153624');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                                </a>
+
 
                                 <!--  target -->
                                 <div class="content mt-25 center1 ">
