@@ -1,0 +1,501 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KN6DXRFLS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1KN6DXRFLS');
+    </script>
+
+    <!--========= Required meta tags s=========-->
+    <meta charset="utf-8">
+    <meta  http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Jason Fang - Projects</title>
+
+    <!--====== Favicon ======-->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="images/x-icon" />
+    <link rel="icon" href="static/picture/webicon.png">
+
+    <!--====== CSS Here ======-->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/lightcase.css">
+    <link rel="stylesheet" href="static/css/meanmenu.css">
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- header start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-4 my-auto">
+                    <a href="index" class="site-logo">
+                        <img src="static/picture/logo.png" alt="LOGO">
+                    </a>
+                </div>
+                <div class="col-lg-9 col-8">
+                    <div class="menu-area">
+                        <div class="main-menu">
+                            <nav id="main-menu">
+                                <ul>
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="portfolio">Portfolio</a></li>
+                                    <li><a href="projects">Projects</a></li>
+                                    <!--<li><a href="../magician/home">Magician</a></li>-->
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="contact" class="site-btn d-inline d-lg-none d-xl-inline">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="col-xl-12 text-right">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="home">Home</a></li>
+                        <li>-</li>
+                        <li>Matplotlib & Seaborn Showcase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="shape shape__left-top"><img src="static/picture/shape-1.png" alt=""></span>
+        <span class="shape shape__right-bottom"><img src="static/picture/b-shape.png" alt=""></span>
+    </div>
+    <!-- breadcrumb area end -->
+
+
+    <!-- service area start -->
+    <section class="blog-area2">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-xl-10">
+                    <div class="blog-wrap">
+                        <div class="row">
+                            <div class="white2">
+                                <a>Here are some of my Tableau examples. I use Tableau during the data exploration and reporting stages.
+                                    It's a very powerful tool for me to create worksheets and dashboards.
+                                    Parameters and filters are useful to create interaction.
+                                    Also, I use its data interpreter if my dataset is unorganized. I also use it to pivot or split my data.
+                                    These worksheets and dashboards were published on Tableau Public and were embedded on my website.
+                                    You can see some interactive worksheets and dashboards here and try them by yourself.</a>
+
+
+
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Startup Company Clustering Case</h7>
+                                </div>
+                                <a>In this case, I was trying to solve several problems for this startup company. The company decided to expand its stores, and it can't compete with big players in big cities, so it wanted to build a vast network in the smaller cities. The company has two separate sales regions.
+
+                                    <br><br>
+                                    Here are the problems:
+                                    <br>
+                                    1. Find the average revenue per city.
+                                    <br>
+                                    2. Find the average marketing spending per city.
+                                    <br>
+                                    3. Find the average ROI per city.
+                                    <br>
+                                    4.Identify which of the two sales regions is performing better.
+                                    <br>
+                                    4.Identify which of the 10 new locations have the best potential for the company
+                                    to invest more funds into marketing.
+                                    <br><br>
+                                    I used the group function to create two customer territories for each region, creating average revenue, average marketing spend, and average ROI. Then I used the highlight function to identify new
+                                    and old stores. Tableau has an embedded cluster function (K-means model) in its analytics tools, so I just used this very powerful tool to cluster the stores which performed differently.
+
+                                    <br><br>
+                                    To identify which of the cities are the best to expand the store, I used inner join to connect another dataset which is the
+                                    U.S. population dataset. After I combined the population information into the cluster analysis, Tableau
+                                    created three clusters by default. Then I added some trend lines (linear regression model) to the graph so that I could determine which new stores have the best potential for the company.
+
+
+
+                                    <div class='tableauPlaceholder' id='viz1632758153624' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clustering_16327578571070&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Clustering_16327578571070&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clustering_16327578571070&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632758153624');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                                </a>
+
+
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>UK Bank Segmentation Case</h7>
+                                </div>
+                                <a>This is a UK bank dataset. Customers are from England, Wales, North Ireland and Scotland.
+                                    It's a customer segmentation dashboard, and you can use each worksheet as a filter.
+                                    If you click on England, then you'll see all the information about England.
+
+                                    <div class='tableauPlaceholder' id='viz1632517388441' style='position: relative'><noscript><a href='#'><img alt='UK Bank Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UK&#47;UKBank_16325173589990&#47;UKBankDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='UKBank_16325173589990&#47;UKBankDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;UK&#47;UKBank_16325173589990&#47;UKBankDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632517388441');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    <br>
+                                    I also created a story in Tableau to tell my audiences some meaningful findings.
+                                    <br>
+                                    1. This bank's customer baseline.
+                                    <br>
+                                    2. A lot of white-collar workers are located in England.
+                                    <br>
+                                    3. People in Scotland are mostly blue-collar workers and they are older, about 64%.
+                                    <br>
+                                    4. Data for Wales show that people in Wales are above average representation of mid-sized balances.
+                                    <br>
+                                    5. Younger age groups and female customers are in Scotland.
+
+                                    <div class="center3"> <img src="static/picture/story.PNG" alt="" height="450px" width="600px" ></div>
+
+                                </a>
+
+
+
+
+
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Vehicles Dashboard</h7>
+                                </div>
+                                <a>This dataset was very unorganized. I used Tableau data interpreter to clean and pivot the dataset.
+                                    <div class='tableauPlaceholder' id='viz1632536905885' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ve&#47;VehiclesSales_16325366408570&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VehiclesSales_16325366408570&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ve&#47;VehiclesSales_16325366408570&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632536905885');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    <br>
+                                    <div class="center3">
+                                        Original dataset in Excel
+
+                                    </div>
+
+                                    <div class="center3"> <img src="static/picture/carstable.PNG" alt="" height="450px" width="600px" ></div>
+                                    <div class="center3">
+                                    Cleaned dataset in Tableau
+
+                                    </div>
+                                    <div class="center3"> <img src="static/picture/carstable2.PNG" alt="" height="450px" width="600px" ></div>
+
+                                </a>
+
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Brazilian E-Commerce Sales Data Model</h7>
+                                </div>
+                                <a>This is a Brazilian E-Commerce Sales dataset. The bubbles show the sales in each zip code area.
+                                    To create this visual map, I connected 8 datasets and created a data model.
+                                    You can view sellers in different states and each state has its own color.
+                                    <div class='tableauPlaceholder' id='viz1632509378570' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BrazilianE-CommerceSalesMap_16325085937790&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BrazilianE-CommerceSalesMap_16325085937790&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Br&#47;BrazilianE-CommerceSalesMap_16325085937790&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632509378570');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                    <br>
+                                    This is the data schema sketch map , so I followed this data model to recreate this model in Tableau.
+                                    <div class="center3"> <img src="static/picture/dataschema.png" alt="" height="450px" width="600px" ></div>
+                                    <br>
+                                    It's different from data joining or data blending. I just created relationships among these datasets.
+                                    <div class="center3"> <img src="static/picture/datamodel2.PNG" alt="" height="450px" width="600px" ></div>
+
+                                </a>
+
+
+
+                                <!--  target -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Sales/Target for Each Category</h7>
+                                </div>
+                                <a>There are three Excel sheets. I used inner join to connect the first two datasets.
+                                    The third dataset is the sales target for each category. I created a dual-axis chart and combined the actual sales and target sales together. Also, to make a simple chart, I used
+                                    filter to create this interactive bar chart so that people could see what they want to see.
+                                    <div class='tableauPlaceholder' id='viz1632451869798' style='position: relative'><noscript><a href='#'><img alt='Sales&#47;Target for Each Category ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;DualAxis_16324518590970&#47;SalesTargetforEachCategory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DualAxis_16324518590970&#47;SalesTargetforEachCategory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Du&#47;DualAxis_16324518590970&#47;SalesTargetforEachCategory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632451869798');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                </a>
+
+
+                                <!--  first dashboard -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>Sales Profits in Europe</h7>
+                                </div>
+                                <a>This is an interactive dashboard about a company's profit margins in Europe from 2011 to 2014.
+                                    You can choose to view all years' profit margins or a single year's profit margins in the right pane.
+                                    Also, if you select one country, the customer scatter plot will show you each customer's profit margins in that country.
+                                    <div class='tableauPlaceholder' id='viz1632420930302' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map_16323529940300&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Map_16323529940300&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;Map_16323529940300&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632420930302');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                </a>
+
+                                <!--  Unemployment -->
+                                <div class="content mt-25 center1 ">
+                                    <h7>U.S. Unemployment Area Chart</h7>
+                                </div>
+                                <a>This is an area chart of the U.S. unemployment population since 2005. I created some filters to create
+                                    this interactive area chart. You can select different age groups and genders to see specific area charts.
+
+                                    <div class='tableauPlaceholder' id='viz1632420130817' style='position: relative'><noscript><a href='#'><img alt='Time Series ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries_16323384581510&#47;TimeSeries&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TimeSeries_16323384581510&#47;TimeSeries' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeSeries_16323384581510&#47;TimeSeries&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632420130817');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                                </a>
+<!--
+                              &lt;!&ndash;  First US map&ndash;&gt;
+                                <div class="content mt-25 center1 ">
+                                    <h7>States' Profits Map</h7>
+                                </div>
+                                    <a>This is a sales dataset in the U.S. By using Tableau, I could quickly create a calculated field and found out the profits for each state. Then, it's very easy to draw a map to show the total profits for each state. Different profits have different colors, and you can highlight the state that you selected.
+                                    <div class='tableauPlaceholder' id='viz1632410755600' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StatesProfits_16323215664400&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='StatesProfits_16323215664400&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StatesProfits_16323215664400&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1632410755600');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                </a>
+
+
+                                <br><br>
+                                <div class="center">
+                                    <a href="portfolio" class="site-btn ">Portfolio</a>
+                                    <a href="https://public.tableau.com/app/profile/jason.fang7513" TARGET="_blank" class="site-btn site-btn__borderd">Tableau Public</a>
+                                </div>
+
+                                </div>-->
+
+
+                    </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- service area end -->
+
+    <!-- testimonial area start -->
+    <!--<div class="testimonial-area mt-120 pt-80">
+        <span class="side-shape side-shape__right side-shape__about">
+            <img src="static/picture/shape-side.png" alt="">
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-right">
+                    <div class="section-heading mb-90">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="testimonial-shape">
+                        <img src="static/picture/testimonial-shape.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="testimonial owl-carousel">
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-190">
+                <div class="col-xl-12">
+                    <div class="brand owl-carousel">
+                        <div class="brand__item">
+                            <img src="static/picture/b-1.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-2.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-3.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- testimonial area end -->
+
+    <!-- cta area start -->
+   <!-- <section class="cta-area mt-190">
+        <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="cta-wrap">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <h2 class="mb-25">Let's work together on
+                                    your next project</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s,</p>
+                            </div>
+                            <div class="col-xl-5 align-self-center text-right">
+                                <a href="contact.html" class="site-btn">Let's Talk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- cta area end -->
+ <!--   <div class="hearts">
+    <img src="static/picture/clubs.png" alt="">
+    </div>-->
+    <!--footer-->
+    <!--  /*wechat id*/-->
+    <div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext"  id="wechat">WeChat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>Wechat ID:
+                        <br><br>jasonfangmagic
+                        <br>
+                        <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >
+                        <br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  /*email id*/-->
+    <div class="modal fade" id="ev" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext"  id="ev">Email</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>jasonfangworks@gmail.com
+                        <br><br>
+                        <!--    <br>
+                            <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >-->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--phone-->
+    <div class="modal fade" id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext" id="phone">Phone</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>301-633-5387
+                        <br><br>
+                        <!--    <br>
+                            <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >-->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal end-->
+    <!-- wechat id end-->
+    <!-- footer start -->
+    <footer class="site-footer mt-175">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a data-toggle="modal" data-target="#ev"><i class="fa fa-envelope"></i></a>
+                        <a data-toggle="modal" data-target="#phone"><i class="fa fa-phone"></i></a>
+                        <a data-toggle="modal" data-target="#wechat"><i class="fab fa-weixin" ></i></a>
+                        <a href="https://www.linkedin.com/in/jasonfangmagic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jasonfangmagic" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://jasonfangmagic.com" target="_blank"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto text-right">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; Jason Fang. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!--========= JS Here =========-->
+    <script src="static/js/jquery-2.2.4.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.meanmenu.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/lightcase.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/tilt.jquery.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/waypoint.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
