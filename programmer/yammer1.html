@@ -107,7 +107,9 @@
                         <div class="row">
                             <div class="white2">
                                 <a>Yammer is an enterprise social networking service used for private communication within organizations.
-                                    It's a relatively large dataset, more than 34,000 rows of records and 4 tables, such as experience, event, emails, and users.
+                                    It is free to use indefinitely, but companies must pay license fees if they want access to administrative
+                                    controls, including integration with user management systems like ActiveDirectory.
+                                    This is a relatively large dataset, more than 34,000 rows of records and 4 tables, such as experience, event, emails, and users.
 
                                     <br><br>There are three problems I was trying to solve:
                                     <br>1. Drop in user engagement
@@ -117,12 +119,12 @@
                                     <div class="content mt-25 center1 ">
                                         <h7>Drop in user engagement</h7>
                                     </div>
-                                    This is an example of how I use Redshift. It's very intuitive. I just
-                                    loaded the data from my AWS S3 bucket by using IAM role method. Redshift query editor v2 was introduced in September 2021. It's very convenient and powerful.
+                                    The below chart shows the number of engaged users each week.
+                                    Yammer defines engagement as having made some type of server call by interacting with the product (shown in the data as events of type "engagement"). Any point in this chart can be interpreted as "the number of users who logged at least one engagement event during the week starting on that date."
+                                    I tried to find out what caused the dip at the end of the chart shown below.
 
-                                    <div class="center3"> <img src="static/picture/red1.PNG" alt=""></div>
-                                    <div class="center3"> <img src="static/picture/sql2.PNG" alt=""></div>
-                                    <div class="center3"> <img src="static/picture/sql1.PNG" alt=""></div>
+                                    <div class="center3"> <img src="static/picture/ya1.PNG" alt=""></div>
+
                                     <br><br>
                                     <div class="content mt-25 center1 ">
                                         <h7>Database Design</h7>
