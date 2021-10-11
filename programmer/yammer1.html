@@ -109,7 +109,7 @@
                                 <a>Yammer is an enterprise social networking service used for private communication within organizations.
                                     It is free to use indefinitely, but companies must pay license fees if they want access to administrative
                                     controls, including integration with user management systems like ActiveDirectory.
-                                    This is a relatively large dataset, more than 34,000 rows of records and 4 tables, such as experience, event, emails, and users.
+                                    This is a relatively large dataset, more than 34,000 rows of records and 5 tables, such as experience, event, emails, and users.
 
                                     <br><br>There are three problems I was trying to solve:
                                     <br>1. Drop in user engagement
@@ -127,85 +127,14 @@
 
                                     <br><br>
                                     <div class="content mt-25 center1 ">
-                                        <h7>Database Design</h7>
+                                        <h7>Hypotheses</h7>
                                     </div>
 
-                                    Designing databases and building entity-relationship diagrams are essential skills for data scientists. You have to know the primary key,
-                                    foreign keys, candidate keys, prime and non-prime attributes in your database so that you can better analyze the data.
+                                    Before I make some hypotheses, Understanding why the database is built in this way is very important.
+                                    This database is in third normal form and user id is the primary key.
 
 
                                     <br>
-                                <br>Here are several reasons why data scientists need to know database design:
-                                <br>1. Understand why a database was designed in a certain way.
-                                <br>2. Learn quicker how to navigate your way around.
-                                <br>3. Find some potential vulnerabilities, flaws, and mistakes.
-                                <br>4. Communicate effectively with data engineers, data architects, and so on.
-                                <div class="white2">
-                                    <a>
-                                        <div class="content mt-25 center1 ">
-                                            <h7>Normalization</h7>
-                                        </div>
-                                        Data scientists need to use normalization to organize the columns (attributes)
-                                        and tables (relations) of a relational database and reduce data redundancy and
-                                        improve data integrity.
-                                        To reduce potential errors and increase data efficiency, I always create a
-                                        database by using third normal form (3NF). There's no need to have duplicates in
-                                        your database, and it will take more space and increase data analyzing time.
-
-
-                                    </a>
-                                    <br> <br>
-                                    Types of normalization:
-                                    <br>1. First Normal Form (1NF): Doesn't contain duplicate rows; and every cell contains only one value.
-                                    <br>2. Second Normal Form (2NF): If it's in first normal form (1NF); and every non-prime attribute of the
-                                            table is dependent on the whole of every candidate key.
-                                    <br>3. Third Normal Form (3NF): If it's in second normal form (2NF); and every non-prime attribute is
-                                            non-transitively dependent on every candidate key.
-
-
-                                <br><br>
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Normalization Case</h7>
-                                    </div>
-                                    This is an example of how I examine a database and then normalize it.
-                                    This online shop transaction database is in first normal form (1NF), then I changed it
-                                    to second normal form (2NF) and third normal form (3NF). Here are several steps
-                                    that I did to normalize it.
-                                    <div class="center3"> <img src="static/picture/n1.PNG" alt=""></div>
-                                    <br>Steps:
-                                    <br>1. Check if it's in first normal form (1NF).
-                                    <br>I checked if there are duplicated rows in the
-                                    database by running the following query so that I can see the total numbers of rows are the total
-                                    numbers of distinct rows. They matched, so it's in first normal form (1NF).
-                                    <div class="center3"> <img src="static/picture/n2.PNG" alt="" width="600px"></div>
-                                    <br>2. Check if it's in second normal form (2NF).
-                                    <br>I need to find the candidate key, prime and non-prime
-                                    attributes in this database. The transaction id is the most obvious primary key and candidate key, but there
-                                    is more than one candidate key. To find the candidate keys in the database, I first think of the purpose of
-                                    this database. Because it's a database to record every transaction, so purchase time and customer id make up
-                                    the other candidate key. The first three columns are prime attributes and the rest columns are non-prime attributes.
-                                    Then I found that customer id is sufficient to identify the first name, second name, shipping state, and loyalty discount. It's not
-                                    in second normal form, so I dropped these columns and create a separate table for these attributes.
-                                    I selected the unique customer rows and created another table. Then I dropped those columns
-                                    in the original table (Couldn't drop multiple columns at once in Redshift). Now, this database is in
-                                    second normal form (2NF).
-
-                                    <div class="center3"> <img src="static/picture/n3.PNG" alt="" width="600px" ></div>
-                                    <br>3. Check if it's in third normal form (3NF).
-                                    <br>Because I created a new table in the last step, I had to check two tables in this step.
-                                    The customer table is in third normal form (3NF), but the modified transaction table is not
-                                    in third normal form (3NF). The description and retail price columns are dependent on the item column.
-                                    So split this table into two tables. The process is the same as the last one. I created another table
-                                    for the item, description, and retail price, then I dropped the description and retail price from the original table.
-
-                                    <div class="center3"> <img src="static/picture/n4.PNG" alt="" width="600px" ></div>
-                                    <br>4. Results
-                                    <br>Now there are three tables, but I removed many unnecessary duplicated rows.
-                                    It's not obvious in this example, but if a database contains billions of records, a database
-                                    in third normal form (3NF) is much more efficient.
-                                    <div class="center3"> <img src="static/picture/n5.PNG" alt="" width="600px" ></div>
-                                    <div class="center3"> <img src="static/picture/n6.PNG" alt="" width="600px" ></div>
-                                    <div class="center3"> <img src="static/picture/n7.PNG" alt="" width="600px" ></div>
 
                                     <br><br>
                                 <div class="center">
