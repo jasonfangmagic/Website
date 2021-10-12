@@ -130,11 +130,32 @@
                                         <h7>Hypotheses</h7>
                                     </div>
 
-                                    Before I make some hypotheses, Understanding why the database is built in this way is very important.
-                                    This database is in third normal form and user id is the primary key.
+                                    There are many possible
+                                    reasons that could cause the drop in user engagement. 1. Some technical issues resulted that
+                                    users couldn't use the app. 2. A major marketing event caused a spike before and then the user engagement
+                                    dropped back to normal level.
 
+                                    Before I test my hypotheses, Understanding why the database is built in this way is very important.
+                                    This database is in third normal form and user id is the primary key, so I decided to check users'
+                                    activities in my first step.
 
-                                    <br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Users' Activities</h7>
+                                    </div>
+                                    I used the following sql query to check all users and new users numbers every day.
+                                    In Redshift, I could quickly generate a graph to see if there's downward trend in recent weeks.
+                                    It looks like users' numbers are stable, so this is not the reason that cause a drop in engagement.
+
+                                    <div class="center3"> <img src="static/picture/ya2.PNG" alt=""></div> <br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Cohort  Analysis</h7>
+                                    </div>
+                                    Since the growth rate was stable, I'd like to do a cohort analysis.
+                                    Splitting the users into cohort groups, we can see that our old users (10+ weeks)
+                                    engagement was decreasing over the last few weeks. Then I need to find out that
+                                    why our retention rate is declining.
+                                    <div class="center3"> <img src="static/picture/ya3.PNG" alt=""></div> <br>
+
 
                                     <br><br>
                                 <div class="center">
