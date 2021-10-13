@@ -2,6 +2,7 @@
 <html class="no-js" lang="zxx">
 
 <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KN6DXRFLS"></script>
     <script>
@@ -12,7 +13,7 @@
         gtag('config', 'G-1KN6DXRFLS');
     </script>
 
-    <!--========= Required meta tags =========-->
+    <!--========= Required meta tags s=========-->
     <meta charset="utf-8">
     <meta  http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -60,7 +61,6 @@
                                     <li><a href="home">Home</a></li>
                                     <li><a href="about">About</a></li>
                                     <li><a href="portfolio">Portfolio</a></li>
-                                    <!--<li><a href="service.html">Service</a></li>-->
                                     <li><a href="projects">Projects</a></li>
                                     <!--<li><a href="../magician/home">Magician</a></li>-->
                                     <li><a href="contact">Contact</a></li>
@@ -79,14 +79,14 @@
     <!-- header end -->
 
     <!-- breadcrumb area start -->
-    <div class="breadcrumb-area mb-60">
+    <div class="breadcrumb-area mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li>Projects</li>
+                        <li>Yammer Case</li>
                     </ul>
                 </div>
             </div>
@@ -96,123 +96,165 @@
     </div>
     <!-- breadcrumb area end -->
 
-    <!-- blog area start -->
-    <div class="blog-area">
+
+    <!-- service area start -->
+    <section class="blog-area2">
         <div class="container">
             <div class="row justify-content-center">
+
                 <div class="col-xl-10">
                     <div class="blog-wrap">
                         <div class="row">
+                            <div class="white2">
+                                <a>Yammer is an enterprise social networking service used for private communication within organizations.
+                                    It is free to use indefinitely, but companies must pay license fees if they want access to administrative
+                                    controls, including integration with user management systems like ActiveDirectory.
+                                    This is a relatively small dataset, with more than 34,000 rows of records and 5 tables, such as experience, event, emails, and users.
 
 
-                            <!--myweb-->
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="Web_Development_HTML">
-                                            <img src="static/picture/myweb0.png" alt="">
-                                        </a>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Problem: Drop in User Engagement</h7>
                                     </div>
-                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                         <span class="author">Post by : Author</span>
-                                         <span class="date">12-May-2021</span>
-                                     </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="Web_Development_HTML">Web Development HTML</a>
-                                        </h4>
-                                        <p> My personal website developed by using HTML, CSS and JavaScript.
-                                            As a programmer and magician, I need two separate websites for two kinds of audiences, but
-                                            I also need to integrate these two websites together. It's a simple static website,
-                                            but I developed this website by myself. A lot of skills are required to build this website.
-                                        </p>
-                                        <a href="Web_Development_HTML" class="read-more">Read More.....</a>
+                                    The below chart shows the number of engaged users each week.
+                                    Yammer defines engagement as having made some type of server call by interacting with the product (shown in the data as events of type "engagement"). Any point in this chart can be interpreted as "the number of users who logged at least one engagement event during the week starting on that date."
+                                    I tried to find out what caused the dip at the end of the chart shown below.
+
+                                    <div class="center3"> <img src="static/picture/ya1.PNG" alt=""></div>
+
+                                    <br><br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Hypotheses</h7>
                                     </div>
-                                </article>
+
+                                    There are many possible
+                                    reasons that could cause the drop in user engagement. 1. Some technical issues resulted that
+                                    users couldn't use the app. 2. A major marketing event caused a spike before and then the user engagement
+                                    dropped back to the normal level.
+
+                                    Before I test my hypotheses, Understanding why the database is built in this way is very important.
+                                    This database is in third normal form and user id is the primary key, so I decided to check users'
+                                    activities in my first step.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Users' Activities</h7>
+                                    </div>
+                                    I used the following sql query to check all users and new users numbers every day.
+                                    In Redshift, I could quickly generate a graph to see if there's a downward trend in recent weeks.
+                                    It looks like users' numbers are stable, so this is not the reason that causes a drop in engagement.
+
+                                    <div class="center3"> <img src="static/picture/ya2.PNG" alt=""></div> <br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Cohort  Analysis</h7>
+                                    </div>
+                                    Since the growth rate was stable, I'd like to do cohort analysis.
+                                    Splitting the users into cohort groups, we can see that our old users' (10+ weeks) engagement was decreasing over the last few weeks. Then I need to find out that
+                                    why our retention rate is declining.
+
+                                    <div class="center3"> <img src="static/picture/ya3.PNG" alt=""></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Device Analysis</h7>
+                                    </div>
+                                    I checked the device plot. Desktop users' engagement is stable, but engagement in mobile and tablet has decreased significantly. It looks like that the app has some technical issues
+                                    on mobiles and tablets.
+
+                                    <div class="center3"> <img src="static/picture/ya4.PNG" alt=""></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Email Analysis</h7>
+                                    </div>
+                                    The purpose of the digest email is to bring users back into the product.
+                                    It looks like email marketing has some problems, so I check different types
+                                    of email marketing. After viewing the chart, I found the key issue. The click-through rate dropped significantly. There must be something wrong with the newsletter.
+
+                                    <div class="center3"> <img src="static/picture/ya5.PNG" alt=""></div> <br>
+                                    In conclusion, based on the current data, I still don't know what the real problem is,
+                                    but I narrowed it down to the email marketing. This analysis could save the company a lot
+                                    of time to find the problem.
+
+                                    <br><br>
+                                <div class="center">
+                                    <a href="portfolio" class="site-btn ">Portfolio</a>
+                                </div>
+
+                                </div>
+
+
+                    </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- service area end -->
+
+    <!-- testimonial area start -->
+    <!--<div class="testimonial-area mt-120 pt-80">
+        <span class="side-shape side-shape__right side-shape__about">
+            <img src="static/picture/shape-side.png" alt="">
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-right">
+                    <div class="section-heading mb-90">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="testimonial-shape">
+                        <img src="static/picture/testimonial-shape.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="testimonial owl-carousel">
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
                             </div>
-
-
-                            <!--plt-->
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="Matplotlib&Seaborn_Showcase">
-                                            <img src="static/picture/plt0.png" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                         <span class="author">Post by : Author</span>
-                                         <span class="date">12-May-2021</span>
-                                     </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="Matplotlib&Seaborn_Showcase">Matplotlib & Seaborn Showcase</a>
-                                        </h4>
-                                        <p> Here are some of my Matplotlib and Seaborn examples. I usually use Tableau during the data exploration and reporting stages.
-                                            However, Matplotlib and Seaborn are also very useful when I write Python code.
-                                            I use Matplotlib and Seaborn to generate kernel density estimation plots, pie charts, box plots, and so on.
-                                            While only generating correct plots is not enough. I do care about the style and color of my plots.
-
-                                        </p>
-                                        <a href="Matplotlib&Seaborn_Showcase" class="read-more">Read More.....</a>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <!--sql-->
-                            <div class="col-xl-12 mb-120">
-                                <article class="blog-item blog-item__2">
-                                    <div class="thumb">
-                                        <a href="sql">
-                                            <img src="static/picture/sql0.png" alt="">
-                                        </a>
-                                    </div>
-                                    <!-- <div class="blog-item__meta blog-item__meta&#45;&#45;2">
-                                         <span class="author">Post by : Author</span>
-                                         <span class="date">12-May-2021</span>
-                                     </div>-->
-                                    <div class="blog-item__content blog-item__content--2">
-                                        <h4 class="blog-item__title blog-item__title--2">
-                                            <a href="sql">SQL & RedShift</a>
-                                        </h4>
-                                        <p> SQL is commonly used by data analysts and data scientists. I had used different types of SQL, such as SAS proc SQL, PopSql, MySQL Workbench, MS SQL.
-                                            In the end, I decided to use Amazon Redshift.  This is an example of how I use Redshift. It's very intuitive. I just
-                                            loaded the data from my AWS S3 bucket by using IAM role method.
-                                        </p>
-                                        <a href="sql" class="read-more">Read More.....</a>
-                                    </div>
-                                </article>
-                            </div>
-
-
-
-
-
-
-
                         </div>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <ul class="blog-nav mt-75">
-                                    <li><a href="projects"><i class="far fa-angle-left"></i></a></li>
-                                    <li><a href="projects">1</a></li>
-                                    <li><a href="projects2">2</a></li>
-                                    <li><a href="projects3"class="active">3</a></li>
-                                    <li><a href="#projects4">4</a></li>
-                                    <li><a href="#0">5......</a></li>
-                                    <li><a href="#0"><i class="far fa-angle-right"></i></a></li>
-                                </ul>
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mt-190">
+                <div class="col-xl-12">
+                    <div class="brand owl-carousel">
+                        <div class="brand__item">
+                            <img src="static/picture/b-1.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-2.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-3.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- blog area end -->
+    </div>-->
+    <!-- testimonial area end -->
 
-    <!--  cta area start-->
-    <section class="cta-area mt-190">
+    <!-- cta area start -->
+   <!-- <section class="cta-area mt-190">
         <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
         <div class="container">
             <div class="row">
@@ -222,20 +264,23 @@
                             <div class="col-xl-7">
                                 <h2 class="mb-25">Let's work together on
                                     your next project</h2>
-                                <p></p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s,</p>
                             </div>
                             <div class="col-xl-5 align-self-center text-right">
-                                <a href="contact" class="site-btn">Hire Me</a>
-                                <a href="https://drive.google.com/file/d/18X1AAL3e09nRxN-W8D4lwFtpGN0T-QoQ/view?usp=sharing" target="_blank" download="Jason Resume.pdf" class="site-btn site-btn__borderd">Resume</a>
+                                <a href="contact.html" class="site-btn">Let's Talk</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- cta area end-->
-
+    </section>-->
+    <!-- cta area end -->
+ <!--   <div class="hearts">
+    <img src="static/picture/clubs.png" alt="">
+    </div>-->
     <!--footer-->
     <!--  /*wechat id*/-->
     <div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -287,7 +332,6 @@
                     </div>
 
                     <div class="modal-footer">
-
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -316,7 +360,6 @@
                     </div>
 
                     <div class="modal-footer">
-
                         <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -349,7 +392,6 @@
         </div>
     </footer>
     <!-- footer end -->
-
     <!--========= JS Here =========-->
     <script src="static/js/jquery-2.2.4.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
