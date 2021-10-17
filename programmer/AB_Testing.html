@@ -125,10 +125,86 @@
                                     </div>
                                     We need to find out the sample size of a test, which requires three parameters.
                                     <br>1. Type II error rate β or Power, because Power = 1 - β. You know one of them, you know the other.
-                                    <br>2. Significance level α.
+                                    <br>2. Significance level α, usually 0.05.
                                     <br>3. Minimum detectable effect.
+                                    <br>Sample size n approximately equals 16 (based on α = 0.05 and β = 0.8) multiplied by
+                                    sample variance divided by δ square, whereas δ is the difference between treatment and control.
+                                    Type 1 (false positive) is worse than a Type 2 (false negative) error.
+                                    <div class="center3"> <img src="static/picture/ab2.PNG" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/ab1.PNG" alt=""></div> <br>
+                                    Now we only need to find out the two parameters in our formula. 1. Sample variances can be found in the dataset.
+                                    2. The difference between treatment and control groups, which is  the minimum detectable effect.
+                                    It is the smallest difference that would matter in practice.  eg. 5% increase in revenue.
+                                    Then we can determine our sample size for A/B testing. We need more samples if the sample variance is larger, and we need fewer samples if the delta is larger.
 
-                                    <div class="center3"> <img src="static/picture/ya5.PNG" alt=""></div> <br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Why α = 0.05 & β = 0.8?</h7>
+                                    </div>
+                                    Before I get started, it looks like I got everything I needed. However, is the rule of thumb correct (α = 0.05 and β = 0.8)?
+                                    P value (Significance level) < 0.05 is considered statistically significant.
+                                    There is an over emphasis on p value. The American statistical association put out a statement
+                                    clarifying the p-value, saying the p-value is never intended to be a substitute for scientific reasoning.
+                                    The over emphasis on p-value often leads to the neglect of other information, such as effect size
+                                    because telling that statistically significant effects are much more likely to be published.
+                                    Of those published including p value, 96% of them are below 0.05. As a data scientist, you should always
+                                    report effect sizes and confidence interval.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Interference</h7>
+                                    </div>
+                                    Usually we randomly select samples for treatment and control groups as
+                                    we expect each user is independent and has no interference.
+                                    However, it's not true when we test social networks, such as Facebook, Instagram, Uber and so on.
+                                    People are very likely to be influenced by their networks, which is called network effect.
+                                    Difference between control and treatment groups underestimates the real benefit of the network effect.
+                                    For two-sided markets, interference between two groups can also lead to biased estimates of network effect.
+                                    That's because resources are shared among users. In two-sided markets, the network effect overestimates the actual effect.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Prevent Interference</h7>
+                                    </div>
+                                    To prevent users from sharing information, we could do several things to isolate users.
+                                    <br><br>For Social Networks Companies:
+                                    <br>1. Creating network clusters to represent groups of users who are more likely to interact with people within the group than people outside of the group.
+                                    <br>2. Ego-cluster randomization.A cluster is composed of an “ego” (a focal individual), and her “alters” (the individuals she is immediately connected to).
+                                    <br><br>For Two-sided Market Companies:
+                                    <br>1. Geo-based randomization. Selecting users from different locations would be a good idea but the drawback is that the variances
+                                    between two groups would be large.
+                                    <br>2. Time-based randomization. Selecting a day of a week and assigning users to one group is used by companies sometimes.
+                                    It works when network effect only lasts for a short period of time. It doesn't work for a long-time experiment,eg. referral program.
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Analyzing Results</h7>
+                                    </div>
+                                    Novelty and Primacy Effects
+                                    <br>There are two types of people. Some people don't like changes, and this is called primacy effect or change aversion.
+                                    Some people like changes, and this is called novelty effect. However, both effects will not last long as people’s behavior will stabilize after a certain amount of time.
+                                    If an A/B test has a larger or smaller initial effect, it’s probably due to novel or primacy effects.
+                                    There are two ways to address these issues.
+                                    <br>1. Compare new users’ results in the control group to those in the treatment group to evaluate novelty effect
+                                    <br>2. Compare first-time users’ results with existing users’ results in the treatment group to get an actual estimate of the impact of the novelty or primacy effect.
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Multiple Treatment Groups</h7>
+                                    </div>
+                                    If we run multiple treatment groups at the same time, the probability of false positives increases.
+                                    <br>Pr(FP = 0) = 0.95 * 0.95 * 0.95 = 0.857
+                                    <br>Pr(FP >= 1) = 1 - Pr(FP = 0) = 0.143
+                                    <br>With only 3 treatment groups (4 variants), the probability of a false positive (or Type I error) is over 14%. This is called the “multiple testing” problem.
+                                    <br> To solve this issue, we use can use two methods.
+                                    <br>1. Bonferroni correction. It divides the significance level 0.05 by the number of tests.
+                                    <br>2. False Discovery Rate (FDR) FDR = E[# of false positive / # of rejections].
+                                    It is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons.
+                                    If you have a huge number of metrics, it's ok to have some false positives.
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Make Decisions</h7>
+                                    </div>
+                                    Sometimes the results are good enough to make decisions. However, sometimes you would see some contradicting results, such as one metric goes up while another one goes down.
+                                    For example, after running a test, you see the desired metric, such as the click-through rate is going up while the number of impressions is decreasing.
+                                    At this time, you need to make a win-lost tradeoff. To solve this problem, you want to focus on the current objective of the experiment.
+                                    What do you really need?  Also, we want to quantify the negative impact, i.e. the negative shift in a non-goal metric, to help us make the decision.
+
+
+
+
 
 
                                     <br><br>
