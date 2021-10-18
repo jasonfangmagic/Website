@@ -106,22 +106,27 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>A/B testing is a very popular topic among companies. As a data scientist, there are several
-                                    things that I need to check before I conduct an A/B testing.
+                                <a>A/B testing is a very popular topic among companies. As a data scientist, there are several things that I need to check before I conduct A/B testing.
+                                    The first half is the workflow I'd go over every time. There's also an example of A/B testing in the second half
+                                    of this project.
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Quantitative Analysis & Qualitative Analysis</h7>
+                                        <h7>Workflow</h7>
+                                    </div>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>1. Quantitative Analysis & Qualitative Analysis</h7>
                                     </div>
                                     Don't run test every idea. Data scientists are not cheap. Don't waste your time
-                                    on the projects that have low ROI. To evaluate the value of different ideas, conducting a
+                                    on projects that have low ROI. To evaluate the value of different ideas, conducting a
                                     quantitative analysis using historical data to obtain the opportunity sizing of each idea is a good approach.
-                                    However, historical data only provides the insights of what we've done in the past. It would be great to
+                                    However, historical data only provides insights into what we've done in the past. It would be great to
                                     conduct a qualitative analysis with focus groups and surveys. A combination of quantitative and
                                     qualitative analysis will help you to determine what idea to test.
+                                    .
 
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Test Design</h7>
+                                        <h7>2. Test Design</h7>
                                     </div>
                                     We need to find out the sample size of a test, which requires three parameters.
                                     <br>1. Type II error rate β or Power, because Power = 1 - β. You know one of them, you know the other.
@@ -133,57 +138,60 @@
                                     <div class="center3"> <img src="static/picture/ab2.PNG" alt="" width="600px"></div> <br>
                                     <div class="center3"> <img src="static/picture/ab1.PNG" alt=""></div> <br>
                                     Now we only need to find out the two parameters in our formula. 1. Sample variances can be found in the dataset.
-                                    2. The difference between treatment and control groups, which is  the minimum detectable effect.
+                                    2. The difference between treatment and control groups, which is the minimum detectable effect.
                                     It is the smallest difference that would matter in practice.  eg. 5% increase in revenue.
                                     Then we can determine our sample size for A/B testing. We need more samples if the sample variance is larger, and we need fewer samples if the delta is larger.
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Why α = 0.05 & β = 0.8?</h7>
+                                        <h7>3. Why α = 0.05 & β = 0.8?</h7>
                                     </div>
                                     Before I get started, it looks like I got everything I needed. However, is the rule of thumb correct (α = 0.05 and β = 0.8)?
-                                    P value (Significance level) < 0.05 is considered statistically significant.
-                                    There is an over emphasis on p value. The American statistical association put out a statement
+                                    P-value (Significance level) < 0.05 is considered statistically significant.
+                                    There is an over-emphasis on the p-value. The American statistical association put out a statement
                                     clarifying the p-value, saying the p-value is never intended to be a substitute for scientific reasoning.
-                                    The over emphasis on p-value often leads to the neglect of other information, such as effect size
+                                    The over-emphasis on p-value often leads to the neglect of other information, such as effect size
                                     because telling that statistically significant effects are much more likely to be published.
-                                    Of those published including p value, 96% of them are below 0.05. As a data scientist, you should always
+                                    Of those published including p-value, 96% of them are below 0.05. As a data scientist, you should always
                                     report effect sizes and confidence interval.
 
+
                                     <div class="content mt-25 center1 ">
-                                        <h7>Interference</h7>
+                                        <h7>4. Interference</h7>
                                     </div>
-                                    Usually we randomly select samples for treatment and control groups as
-                                    we expect each user is independent and has no interference.
-                                    However, it's not true when we test social networks, such as Facebook, Instagram, Uber and so on.
-                                    People are very likely to be influenced by their networks, which is called network effect.
-                                    Difference between control and treatment groups underestimates the real benefit of the network effect.
-                                    For two-sided markets, interference between two groups can also lead to biased estimates of network effect.
+                                    Usually, we randomly select samples for treatment and control groups as
+                                    we expect each user to be independent with no interference.
+                                    However, it's not true when we test social networks, such as Facebook, Instagram, Uber, and so on.
+                                    People are very likely to be influenced by their networks, which is called the network effect.
+                                    The difference between control and treatment groups underestimates the real benefit of the network effect.
+                                    For two-sided markets, interference between two groups can also lead to biased estimates of the network effect.
                                     That's because resources are shared among users. In two-sided markets, the network effect overestimates the actual effect.
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Prevent Interference</h7>
+                                        <h7>5. Prevent Interference</h7>
                                     </div>
                                     To prevent users from sharing information, we could do several things to isolate users.
                                     <br><br>For Social Networks Companies:
                                     <br>1. Creating network clusters to represent groups of users who are more likely to interact with people within the group than people outside of the group.
-                                    <br>2. Ego-cluster randomization.A cluster is composed of an “ego” (a focal individual), and her “alters” (the individuals she is immediately connected to).
+                                    <br>2. Ego-cluster randomization. A cluster is composed of an “ego” (a focal individual), and her “alters” (the individuals she is immediately connected to).
                                     <br><br>For Two-sided Market Companies:
                                     <br>1. Geo-based randomization. Selecting users from different locations would be a good idea but the drawback is that the variances
-                                    between two groups would be large.
+                                    between groups would be large.
                                     <br>2. Time-based randomization. Selecting a day of a week and assigning users to one group is used by companies sometimes.
-                                    It works when network effect only lasts for a short period of time. It doesn't work for a long-time experiment,eg. referral program.
+                                    It works when the network effect only lasts for a short period. It doesn't work for a long-time experiment, eg. referral program.
+
                                     <div class="content mt-25 center1 ">
-                                        <h7>Analyzing Results</h7>
+                                        <h7>6. Analyze Results</h7>
                                     </div>
                                     Novelty and Primacy Effects
-                                    <br>There are two types of people. Some people don't like changes, and this is called primacy effect or change aversion.
-                                    Some people like changes, and this is called novelty effect. However, both effects will not last long as people’s behavior will stabilize after a certain amount of time.
+                                    <br>There are two types of people. Some people don't like changes, and this is called the primacy effect or change aversion.
+                                    Some people like changes and this is called the novelty effect. However, both effects will not last long as people’s behavior will stabilize after a certain amount of time.
                                     If an A/B test has a larger or smaller initial effect, it’s probably due to novel or primacy effects.
                                     There are two ways to address these issues.
                                     <br>1. Compare new users’ results in the control group to those in the treatment group to evaluate novelty effect
                                     <br>2. Compare first-time users’ results with existing users’ results in the treatment group to get an actual estimate of the impact of the novelty or primacy effect.
+
                                     <div class="content mt-25 center1 ">
-                                        <h7>Multiple Treatment Groups</h7>
+                                        <h7>7. Multiple Treatment Groups</h7>
                                     </div>
                                     If we run multiple treatment groups at the same time, the probability of false positives increases.
                                     <br>Pr(FP = 0) = 0.95 * 0.95 * 0.95 = 0.857
@@ -195,12 +203,101 @@
                                     It is a method of conceptualizing the rate of type I errors in null hypothesis testing when conducting multiple comparisons.
                                     If you have a huge number of metrics, it's ok to have some false positives.
                                     <div class="content mt-25 center1 ">
-                                        <h7>Make Decisions</h7>
+                                        <h7>8. Make Decisions</h7>
                                     </div>
                                     Sometimes the results are good enough to make decisions. However, sometimes you would see some contradicting results, such as one metric goes up while another one goes down.
                                     For example, after running a test, you see the desired metric, such as the click-through rate is going up while the number of impressions is decreasing.
                                     At this time, you need to make a win-lost tradeoff. To solve this problem, you want to focus on the current objective of the experiment.
-                                    What do you really need?  Also, we want to quantify the negative impact, i.e. the negative shift in a non-goal metric, to help us make the decision.
+                                    What do you need?  Also, we want to quantify the negative impact, i.e. the negative shift in a non-goal metric, to help us make the decision.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Wikipedia Case</h7>
+                                    </div>
+                                    Discovery (and other teams within the Foundation) rely on event logging (EL) to track a variety of performance and usage metrics to help us make decisions. Specifically, Discovery is interested in:
+
+                                    <br><br>Click-through rate: the proportion of search sessions where the user clicked on one of the results displayed.
+                                    <br>Zero results rate: the proportion of searches that yielded 0 results.
+                                    <br><br>and other metrics outside the scope of this task. EL uses JavaScript to asynchronously send messages (events)
+                                    to our servers when the user has performed specific actions. In this task, you will analyze a subset of our event logs.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Dataset</h7>
+                                    </div>
+                                    The dataset comes from a tracking schema that we use for assessing user satisfaction. Desktop users are randomly sampled to be anonymously tracked by this schema which uses a "I'm alive" pinging system that we can use to estimate how long our users stay on the pages they visit. The dataset contains just a little more than a week of EL data.
+                                    <div class="center3"> <img src="static/picture/ab3.PNG" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Data Analysis Process</h7>
+                                    </div>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>1. Identify the question</h7>
+                                    </div>
+                                    The first step is identifying the question. How do we define "better"?
+                                    We need to quantify better and translate the user journey into metrics.
+                                    Zero results rate, session length, and click-through rate are three good metrics to measure.
+                                    In this case, I used click-through rate as my main metric because I believe this is the most important one.
+                                    Then I tested the other metrics.
+                                    My question: Is the click-through rate for the new search higher than the old one?
+
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>2. Dashboard</h7>
+                                    </div>
+                                    This is my Tableau dashboard. You can see the information I used in this dashboard.
+                                    <div class='tableauPlaceholder' id='viz1634519571615' style='position: relative'><noscript><a href='#'><img alt='A&#47;B Testing ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AB&#47;ABTesting_16345194708120&#47;ABTesting&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ABTesting_16345194708120&#47;ABTesting' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;AB&#47;ABTesting_16345194708120&#47;ABTesting&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634519571615');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>3. Calculate Sample Ratio Mismatch</h7>
+                                    </div>
+                                    Based on the numbers we have, we could calculate sample ratio mismatch by using a calculator.
+                                    It looks like there's no sample ratio mismatch. I've embedded the calculator and you can
+                                    try it yourself.
+                                    <div class="center3"> <img src="static/picture/ab4.PNG" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/ab5.PNG" alt="" width="600px"></div> <br>
+
+                                    <div class="gigacalculator center1" data-tool="/calculators/sample-ratio-mismatch-calculator.php" data-width="450">
+                                        <div class="gigacalctitle center1">Sample Ratio Mismatch Calculator</div>
+                                        <div class="gigacalcfooter center1">
+                                            <a href="https://www.gigacalculator.com/calculators/sample-ratio-mismatch-calculator.php">Sample Ratio Mismatch Calculator</a> by <a class="gigacalclink" href="https://www.gigacalculator.com/">GIGAcalculator.com</a>
+                                        </div>
+                                    </div>
+
+                                    <script defer src="https://cdn.gigacalculator.com/embed.min.js"></script>
+
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>4. Click-through Rate</h7>
+                                    </div>
+                                    I first made a bar chart of the click-through rate. You can see a significant drop in the click-through rate.
+                                    However, I still need to test if it's statistically significant. It is statistically significant based on the 95% confidence interval,
+                                    so the click-through rate has dropped in the treatment group.
+                                    <div class="center3"> <img src="static/picture/ab8.PNG" alt="" ></div> <br>
+                                    <div class="center3"> <img src="static/picture/ab6.PNG" alt="" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>5. Zero Result Rate</h7>
+                                    </div>
+                                    Then I need to find out that why the click-through rate has dropped. Is it because zero result was shown too many times in the treatment group?
+                                    Based on the results, this is not statistically significant. Zero result rate is not the cause.
+                                    <div class="center3"> <img src="static/picture/ab9.PNG" alt="" ></div> <br>
+                                    <div class="center3"> <img src="static/picture/ab7.PNG" alt="" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>6. Session Length</h7>
+                                    </div>
+                                    It could be because of the session length. Based on the session length boxplot, we can say that this is the reason
+                                    that cause a drop in the click-through rate. Clearly, group A users (control group) spent more time than group B users(treatment group).
+
+
+                                    <div class="center3"> <img src="static/picture/ab10.PNG" alt="" width="600px" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>7. Recommendations </h7>
+                                    </div>
+                                    We need to use the original design or UX. Multiple factors could result in a decrease in the session length.
+                                    1. UX changes. 2. Ranking Algorithm Changes. 3. Bug in the UX, in how we collect data, how we split users into samples.
+
+
 
 
 
