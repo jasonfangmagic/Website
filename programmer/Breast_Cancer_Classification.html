@@ -106,41 +106,51 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>People create tons of models every year, but 85% of them are useless. As a data scientist, I want to create values for my company
-                                    and the world. In practice, good models can save lives and bad models can cost lives.
-                                    This an example of how I use classification models to identify malignant and benign for breast cancer.
-                                    Usually, a 90% accuracy model is good enough, but it's not good enough for identifying cancer. Even though this
-                                    is just an example and no one would use my models, I still treat this example seriously. That's what data scientist about
-                                    to do in the future, changing the world.
+                                <a>People create tons of models every year, but 85% of them are useless. As a data scientist, I want to create values for my company and the world. In practice, good models can save lives and bad models can cost lives.
+    This is an example of how I use classification models to identify malignant and benign for breast cancer.
+    Usually, a 90% accuracy model is good enough, but it's not good enough for identifying cancer. Even though this is just an example and no one would use my models, I still treat this example seriously. That's what data scientists are about to do in the future, changing the world.
+
 
 
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Cancer Diagnosis Procedure</h7>
                                     </div>
-                                   Before I get started, I want to know the cancer diagnosis procedure. Understanding the problem is very important
-                                    for data scientist. We not only want to build models, but also we want to solve real business problems.
-                                    This chart below shows the procedure of identifying malignant and benign for breast cancer.
+                                 Before I get started, I want to know the cancer diagnosis procedure. Understanding the problem is very important for data scientists. We not only want to build models, but also we want to solve real business problems.
+ The chart below shows the procedure of identifying malignant and benign for breast cancer.
+People create tons of models every year, but 85% of them are useless. As a data scientist, I want to create values for my company and the world. In practice, good models can save lives and bad models can cost lives.
+    This is an example of how I use classification models to identify malignant and benign for breast cancer.
+    Usually, a 90% accuracy model is good enough, but it's not good enough for identifying cancer. Even though this is just an example and no one would use my models, I still treat this example seriously. That's what data scientists are about to do in the future, changing the world.
 
                                     <div class="center3"> <img src="static/picture/cancer1.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Bag of Words Model</h7>
+                                        <h7>Data Preprocessing</h7>
                                     </div>
-                                    CountVectorizer is used to further reduce rare words in the dataset. After all this, it is time
-                                    to use some classification models for sentiment analysis.
+                                   I usually look at the plots of my data before I start creating models. This time, I used
+ seaborn to generate a heatmap and a pair plot to see the relationship between the features and target.
+ It looks like using the SVM classifier is the best choice in this case.
 
-                                    <div class="center3"> <img src="static/picture/nlp2.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/cancer1.5.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/cancer3.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/cancer2.png" alt="" width="600px"></div> <br>
+                                    Then I tried to standardize and normalize the dataset.
+                                    <div class="center3"> <img src="static/picture/cancer4.jpg" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Classification</h7>
                                     </div>
-                                    In the end, there comes classification. You can choose many models to classify the
-                                    result. I just used SVM, Naive Bayes, and decision tree for demonstration purposes. There are
-                                    many models and parameters that you can change. Also, there are many ways to evaluate the model.
-                                    I used accuracy and F1 score for demonstration purposes.
+                                    Don't use the default values. I used grid search to tune the model. Then I found out
+                                    that the best accuracy is 98.25 % by using C = 10, gamma = 0.3 and kernel = rbf.
 
-                                    <div class="center3"> <img src="static/picture/nlp3.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/cancer5.jpg" alt="" width="600px"></div> <br>
+                                            <div class="center3"> <img src="static/picture/cancer6.jpg" alt="" width="600px"></div> <br>
+
+                            Overall, this is just an example of how I built my classification models. This model could be further improved
+and I could try other models as well, such as KNN, random forest and XGBoost, and so on.
+
 
 
 
