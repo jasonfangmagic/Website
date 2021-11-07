@@ -106,51 +106,65 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>People create tons of models every year, but 85% of them are useless. As a data scientist, I want to create values for my company and the world. In practice, good models can save lives and bad models can cost lives.
-    This is an example of how I use classification models to identify malignant and benign for breast cancer.
-    Usually, a 90% accuracy model is good enough, but it's not good enough for identifying cancer. Even though this is just an example and no one would use my models, I still treat this example seriously. That's what data scientists are about to do in the future, changing the world.
+                                <a>In this project, I used an image dataset that contains 58,000 images of apparel,
+    such as T-shirts, trousers, pullovers, dresses, and so on. The images are in greyscale, and they are just 28*28 pixels. The image below shows you an overview of the dataset.
+    By using the convolutional neural network, I'm able to identify different types of apparel.
+    It can be implemented in the real world and Echo Look is an example of it. This project just shows how I use CNN to classify apparel.
 
 
-
+                                         <div class="center3"> <img src="static/picture/echo1.jpg" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Echo Look Introduction</h7>
+                                        <h7>Echo Look</h7>
                                     </div>
+
+                                    Echo Look is a product introduced by Amazon in 2017.
+                                    It can just use your voice, easily take full-length photos and short videos with a hands-free camera.
+                                    Plus, get a second opinion with Style Check on which outfit looks best.
+                                    This video below can tell you more about Echo Look.
+
                              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9X_fP4pPWPw' frameborder='0' allowfullscreen></iframe></div>
-                                    <div class="center3"> <img src="static/picture/cancer1.png" alt="" width="600px"></div> <br>
+
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Data Preprocessing</h7>
+                                        <h7>Convolutional Neural Network</h7>
                                     </div>
-                                   I usually look at the plots of my data before I start creating models. This time, I used
- seaborn to generate a heatmap and a pair plot to see the relationship between the features and target.
- It looks like using the SVM classifier is the best choice in this case.
+                                   The preprocessing of this dataset is relatively complicated, even though it is a cleaned dataset.
+ After scaling the features and splitting the dataset into training and validating datasets, I could build a CNN model. I used dropout regularization to improve the model and reduce overfitting. To further improve the model,
+ I could use 128 kernels in the model.
+ The process is shown below.
 
 
-                                    <div class="center3"> <img src="static/picture/cancer1.5.jpg" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/cancer3.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/cancer2.png" alt="" width="600px"></div> <br>
-                                    Then I tried to standardize and normalize the dataset.
-                                    <div class="center3"> <img src="static/picture/cancer4.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/echo5.jpg" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Classification</h7>
+                                        <h7>Saving the Model</h7>
                                     </div>
-                                    Don't use the default values. I used grid search to tune the model. Then I found out
-                                    that the best accuracy is 98.25 % by using C = 10, gamma = 0.3 and kernel = rbf.
+                                   After several hours of training, I got a 91.7% accuracy in the testing dataset.
+                                    Then I save the model. It is not like a simple linear regression model. I don't want
+                                    to wait several hours again if I need to use the model in the future. In practice, training
+                                    a model may take days, so saving your model is very necessary.
+                                    <div class="center3"> <img src="static/picture/echo6.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/echo7.jpg" alt="" width="600px"></div> <br>
 
 
-                                    <div class="center3"> <img src="static/picture/cancer5.jpg" alt="" width="600px"></div> <br>
-                                            <div class="center3"> <img src="static/picture/cancer6.jpg" alt="" width="600px"></div> <br>
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Evaluating the Model</h7>
+                                    </div>
+                                   I used the confusion matrix to evaluate my model. In the classification report,
+you can see precision, recall, f1-score, and support for each class. Also, I used
+seaborn to visualize my confusion matrix.
 
-                            Overall, this is just an example of how I built my classification models. This model could be further improved
-and I could try other models as well, such as KNN, random forest and XGBoost, and so on.
+                                    <div class="center3"> <img src="static/picture/echo2.jpg" alt="" width="600px"></div>
+                                         <div class="center3"> <img src="static/picture/echo3.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/echo4.jpg" alt="" width="600px"></div> <br>
 
 
 
 
- <br><br>Software used: Python
-                                    <br><br>Packages used: sklearn, seaborn, GridSearchCV, numpy, pandas
+
+                                    <br><br>Software used: Python
+                                    <br><br>Packages used: Sklearn, Tensorflow, Keras, Seaborn
 
 
 
