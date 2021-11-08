@@ -86,7 +86,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li> <div class="center3">Echo Look</div></li>
+                        <li> <div class="center3">Fintech App</div></li>
                     </ul>
                 </div>
             </div>
@@ -106,54 +106,65 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>In this project, I used an image dataset that contains 58,000 images of apparel,
-    such as T-shirts, trousers, pullovers, dresses, and so on. The images are in greyscale, and they are just 28*28 pixels. The image below shows you an overview of the dataset.
-    By using the convolutional neural network, I'm able to identify different types of apparel.
-    It can be implemented in the real world and Echo Look is an example of it. This project just shows how I use CNN to classify apparel.
+                                <a>This is a real fintech company that wants to provide its customers with
+                                    a paid mobile app subscription that will allow them to track all of
+                                    their finances in one place. To attract customers, the company releases
+                                    a free version of their app with some main features unlocked.
+                                    The purpose of this project is to identify which users will most likely not enroll
+                                    in the paid product, so that additional offers can be given to them. This is just an
+                                    example of how I find out company's potential customers. The techniques I used here could be
+                                    applied in other companies as well.
 
-
-                                         <div class="center3"> <img src="static/picture/echo1.jpg" alt="" width="600px"></div> <br>
-
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Echo Look</h7>
-                                    </div>
-
-                                    Echo Look is a product introduced by Amazon in 2017.
-                                    It can just use your voice, easily take full-length photos and short videos with a hands-free camera.
-                                    Plus, get a second opinion with Style Check on which outfit looks best.
-                                    This video below can tell you more about Echo Look.
-
-                             <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9X_fP4pPWPw' frameborder='0' allowfullscreen></iframe></div>
-
+                                         <div class="center3"> <img src="static/picture/fin7.jpg" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Convolutional Neural Network</h7>
+                                        <h7>Dataset</h7>
                                     </div>
-                                   The preprocessing of this dataset is relatively complicated, even though it is a cleaned dataset.
- After scaling the features and splitting the dataset into training and validating datasets, I could build a CNN model. I used dropout regularization to improve the model and reduce overfitting. To further improve the model,
- I could use 128 kernels in the model.
- The process is shown below.
-
-
-                                    <div class="center3"> <img src="static/picture/echo5.jpg" alt="" width="600px"></div> <br>
+                                    The data for this project are manufactured fields based on trends in
+                                    real world case studies. Although the data has been artificially created,
+                                    the patterns, associations, and distributions are not random. A lot of data pre-processing
+                                    is needed before I start building model.
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Saving the Model</h7>
+                                        <h7>Features and Label</h7>
                                     </div>
-                                   After several hours of training, I got a 91.7% accuracy in the testing dataset.
-                                    Then I save the model. It is not like a simple linear regression model. I don't want
-                                    to wait several hours again if I need to use the model in the future. In practice, training
-                                    a model may take days, so saving your model is very necessary.
-                                    <div class="center3"> <img src="static/picture/echo6.jpg" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/echo7.jpg" alt="" width="600px"></div> <br>
+                                     <div class="center3"> <img src="static/picture/fin6.jpg" alt=""></div> <br>
+
+                                    The company provides its customer a 24-hour free trial of the premium features.
+                                    <br><br>Label:
+                                    <br>Enrolled: 0 = not enrolled, 1 = enrolled. Did customers pay for the premium features after the free trial.
+                                    <br><br>Features:
+                                    <br>First Open: When customers started using the app.
+                                    <br>Day of Week: 0 = Sunday, 1 = Monday.
+                                    <br>Hour: The time when customers opened the app.
+                                    <br>Age: Age of the customers
+                                    <br>Screen List: The pages of app that customers have viewed.
+                                    <br>Nums Screens: Total number of screens that customers have viewed.
+                                    <br>Mini Game: Did customers play the mini game in the app.
+                                    <br>Used Premium Features: Did customers use premium or not.
+                                    <br>Enrolled Date: When customers chose to enroll.
+                                    <br>Liked: Did customers like any content in the app.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Exploratory data analysis</h7>
+                                    </div>
+                                    I always explore my dataset before I start doing anything. There is a Chinese saying "Sharpening your axe will not delay your job of chopping wood"
+                                    <br><br>I first created some histograms of the numerical features.
+                                    <div class="center3"> <img src="static/picture/fin1.png" alt="" width="600px"></div> <br>
+
+
+                                    <div class="center3"> <img src="static/picture/fin2.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/fin3.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/fin4.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/fin5.png" alt="" width="600px"></div> <br>
+
+
 
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Evaluating the Model</h7>
+                                        <h7>Data Cleaning</h7>
                                     </div>
-                                   I used the confusion matrix to evaluate my model. In the classification report,
-you can see precision, recall, f1-score, and support for each class. Also, I used
-seaborn to visualize my confusion matrix.
+                                   Trash in trash out. I have to use useful data in my machine learning models.
 
                                     <div class="center3"> <img src="static/picture/echo2.jpg" alt="" width="600px"></div>
                                          <div class="center3"> <img src="static/picture/echo3.jpg" alt="" width="600px"></div> <br>
