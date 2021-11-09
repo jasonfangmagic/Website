@@ -106,12 +106,58 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>This is a real fintech company that wants to provide its customers with a paid mobile app subscription that will allow them to track all of their finances in one place. To attract customers, the company releases a free version of their app with some main features unlocked.
-    The purpose of this project is to identify which users will most likely not enroll in the paid product so that additional offers can be given to them. This is just an example of how I find out the company's potential customers. The techniques I used here could be
-    applied in other companies as well.
+                                <a>In this project, I worked for a fintech company that wanted to minimize the churn rate for its app.
+                                    Mainly focusing on the app features, I could help the company improve the app to keep its customers.
+                                    To create the best model, I applied feature selection, data balancing, k-fold cross validation and
+                                    some other techniques. It is very hard to predict that whether people would churn or not because
+                                    churn rate is not balanced, only about 40% people churned. In the end, I created a model with a 64% accuracy.
+
+                                         <div class="center3"> <img src="static/picture/churn7.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Exploratory data analysis</h7>
+                                    </div>
+                                    I always do exploratory data analysis before I start building model. There is a Chinese saying "Sharpening your ax will not delay your job of chopping wood"
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Histograms and Pie Charts</h7>
+                                    </div>
+                                    By checking histograms and pie charts, we could see many young people are using this app and most people
+                                    don't own a house. Also, I saw many features are binary, so I created some pie charts.
+                                    In some pie charts, some answers only account for a very small proportion in these features.
+                                    Then I checked are those answers highly correlated to churn.
+                                     <div class="center3"> <img src="static/picture/churn1.png" alt="" width="600px"></div> <br>
+ <div class="center3"> <img src="static/picture/churn2.png" alt="" width="600px" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Correlation Matrix</h7>
+                                    </div>
+                                    We could get more information from the correlation matrix. IPhone users and android users are highly negatively correlated.
+                                    It makes sense because people usually use one phone, so I combined these two variables into one.
+                                     <div class="center3"> <img src="static/picture/churn3.png" alt="" width="600px" ></div> <br>
+                                    <div class="center3"> <img src="static/picture/churn4.png" alt="" width="600px" ></div> <br>
+
+                                         <div class="content mt-25 center1 ">
+                                        <h7>Data balancing, feature scaling and model selection</h7>
+                                    </div>
+                                    In this dataset, I got more than 40 features, so I decided to narrow down the features to 20.
+                                    Data balancing and feature scaling are very important as well.
+                                     <div class="center3"> <img src="static/picture/churn8.png" alt="" width="600px" ></div> <br>
+ <div class="center3"> <img src="static/picture/churn9.png" alt="" width="600px" ></div> <br>
+
+                                          <div class="content mt-25 center1 ">
+                                        <h7>Models</h7>
+                                    </div>
+                                    Choosing a regression model, I could interpret the coefficients and provide some
+                                    managerial suggestions. Then I use k-fold cross validation to test my model. The accuracy is 0.643 (+/- 0.009)
+                                     <div class="center3"> <img src="static/picture/churn5.png" alt="" width="600px" ></div> <br>
+<div class="center3"> <img src="static/picture/churn10.png" alt="" width="600px" ></div> <br>
+
+                                     <div class="content mt-25 center1 ">
+                                        <h7>Last Thoughts</h7>
+                                    </div>
 
 
-                                         <div class="center3"> <img src="static/picture/fin7.jpg" alt="" width="600px"></div> <br>
 
 
 
