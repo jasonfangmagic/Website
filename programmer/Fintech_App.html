@@ -106,14 +106,10 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>This is a real fintech company that wants to provide its customers with
-                                    a paid mobile app subscription that will allow them to track all of
-                                    their finances in one place. To attract customers, the company releases
-                                    a free version of their app with some main features unlocked.
-                                    The purpose of this project is to identify which users will most likely not enroll
-                                    in the paid product, so that additional offers can be given to them. This is just an
-                                    example of how I find out company's potential customers. The techniques I used here could be
-                                    applied in other companies as well.
+                                <a>This is a real fintech company that wants to provide its customers with a paid mobile app subscription that will allow them to track all of their finances in one place. To attract customers, the company releases a free version of their app with some main features unlocked.
+    The purpose of this project is to identify which users will most likely not enroll in the paid product so that additional offers can be given to them. This is just an example of how I find out the company's potential customers. The techniques I used here could be
+    applied in other companies as well.
+
 
                                          <div class="center3"> <img src="static/picture/fin7.jpg" alt="" width="600px"></div> <br>
 
@@ -130,7 +126,8 @@
                                     </div>
                                      <div class="center3"> <img src="static/picture/fin6.jpg" alt=""></div> <br>
 
-                                    The company provides its customer a 24-hour free trial of the premium features.
+                         The company provides its customer with a 24-hour free trial of the premium features.
+
                                     <br><br>Label:
                                     <br>Enrolled: 0 = not enrolled, 1 = enrolled. Did customers pay for the premium features after the free trial.
                                     <br><br>Features:
@@ -138,7 +135,7 @@
                                     <br>Day of Week: 0 = Sunday, 1 = Monday.
                                     <br>Hour: The time when customers opened the app.
                                     <br>Age: Age of the customers
-                                    <br>Screen List: The pages of app that customers have viewed.
+                                    <br>Screen List: The pages of the app that customers have viewed.
                                     <br>Nums Screens: Total number of screens that customers have viewed.
                                     <br>Mini Game: Did customers play the mini-game in the app.
                                     <br>Used Premium Features: Did customers use premium or not.
@@ -148,22 +145,25 @@
                                     <div class="content mt-25 center1 ">
                                         <h7>Exploratory data analysis</h7>
                                     </div>
-                                    I always explore my dataset before I start doing anything. There is a Chinese saying "Sharpening your axe will not delay your job of chopping wood"
+                                    I always explore my dataset before I start doing anything. There is a Chinese saying "Sharpening your ax will not delay your job of chopping wood"
                                     <br><br>I first created some histograms of the numerical features. You get some useful information immediately.
                                     You can see when people start using the app. The main age group is 20 to 40. People usually view about
                                     20 pages in the app. Most people did not play the mini-game and use the premium features.
+
                                     <div class="center3"> <img src="static/picture/fin1.png" alt="" width="600px"></div> <br>
 
-                                    In this bar chart. It's easy to see the correlation of enrolled between different variables.
-                                    Hour and age have negative correlation. The total number of screen pages that customers viewed has
-                                    the strongest correlation. Also, if the customer has played the mini-game, he is very likely to enroll
-                                    the program. Surprisingly, people who have tried the premium features and liked the content in the app are not
-                                    likely to pay in the end.
+                                    In this bar chart, it's easy to see the correlation of the enrolled variable between different variables.
+Hour and age have a negative correlation. The total number of screen pages that customers viewed has
+the strongest correlation. Also, if the customer has played the mini-game, he is very likely to enroll
+in the program. Surprisingly, people who have tried the premium features and liked the content in the app are not
+likely to pay in the end.
+
 
                                     <div class="center3"> <img src="static/picture/fin2.png" alt="" width="600px"></div> <br>
-                                    This correlation table between features also provides us a lot of information. Older
-                                    people tend to visit less pages than young people. Users who played the mini-game would like to
-                                    try the premium features.
+                                    This correlation table between features also provides us with a lot of information. Older
+people tend to visit fewer pages than young people. Users who played the mini-game would like to
+try the premium features.
+
 
                                     <div class="center3"> <img src="static/picture/fin3.jpg" alt="" width="600px"></div> <br>
                                     <div class="center3"> <img src="static/picture/fin4.png" alt="" width="600px"></div> <br>
@@ -175,9 +175,10 @@
                                     <div class="content mt-25 center1 ">
                                         <h7>Data Cleaning</h7>
                                     </div>
-                                   I wanted to know how long did the customers stay in the app. By changing the data type of
-                                    the first open and enrolled variabels, I could get the time that our customers have spent before
-                                    they chose to enroll the premium program.
+                                  I wanted to know how long did the customers stay in the app. By changing the data type of
+ the first open and enrolled variables, I could get the time that our customers have spent before
+ they chose to enroll in the premium program.
+
 <div class="center3"> <img src="static/picture/fin11.jpg" alt="" width="600px"></div> <br>
                                     In this histogram, we can see most customers have spent less than 500 hours.
                                     <div class="center3"> <img src="static/picture/fin4.png" alt="" width="600px"></div> <br>
@@ -194,9 +195,11 @@
                                     I scaled the model and split the data frame into the features and the label. Then I split them into
                                     training and testing datasets.
                                     <div class="center3"> <img src="static/picture/fin14.jpg" alt="" width="600px"></div> <br>
-                                    By using logistic regression model and random forest model, I got a 76% accuracy. The
-                                    confusion matrices below show the results of logistic regression model and random forest model respectively.
-                                     <div class="center3"> <img src="static/picture/fin8.png" alt="" width="600px"></div> <br>
+                                  By using the logistic regression model and random forest model, I got a 76% accuracy. The
+confusion matrices below show the results of the logistic regression model and random forest model respectively.
+
+
+                                    <div class="center3"> <img src="static/picture/fin8.png" alt="" width="600px"></div> <br>
                                      <div class="center3"> <img src="static/picture/fin9.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
@@ -214,7 +217,8 @@
                                     <div class="center3"> <img src="static/picture/fin17.jpg" alt="" width="600px"></div> <br>
                                     Surprisingly, the ANN model reached 100% accuracy after the second epoch. In the end, I have a
                                     100% accuracy model, which means I predicted all labels correctly in the testing dataset.
-                                     <div class="center3"> <img src="static/picture/fin10.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/fin10.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Last Thoughts</h7>
@@ -223,7 +227,7 @@
                                     <div class="content mt-25 center1 ">
                                         <h7>What I could've done?</h7>
                                     </div>
-                                    1. Different Models: I could've tried SVM, KNN, decision tree, naive bayes, XGboost models.
+                                    1. Different Models: I could've tried SVM, KNN, decision tree, Naive Bayes, XGboost models.
                                     <br>
                                     2. Regularization: I did not apply regularization in my ANN model, even though it's 100% accurate.
                                     I could've tried dropout and early stopping to avoid overfitting.
@@ -234,27 +238,30 @@
                                     <br>
                                     3. Target Encoding:
                                     I could've applied target encoding, which means we calculate the mean of the target variable for each category and replace the category variable with the mean value.
-                                    Using transformed variables usually perform better in models.
+                                    Using transformed variables usually performs better in models.
 
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Multiplicity of Good Model</h7>
                                     </div>
-                                    Based on multiplicity of good model theory, if you have
-                                    good data and get features prepared correctly, you are ver likely to
-                                    get the similar by using different models. In this case, I only got
-                                    76% accuracy by using logistic and random forest models, but I got a 100% accurate
-                                    model by using an ANN model. Did I miss anything in the original dataset?
+                       According to the multiplicity of good model theory, if you have
+good data and get features prepared correctly, you are ver likely to
+get similar by using different models. In this case, I only got
+76% accuracy by using logistic and random forest models, but I got a 100% accurate
+model by using an ANN model. Did I miss anything in the original dataset?
+
+
 
                                     <div class="content mt-25 center1 ">
                                         <h7>100% Accuracy = Perfect?</h7>
                                     </div>
-                                    It looks perfect, but does it last?
-                                    Model decay is an unavoidable problem in machine learning models.
-                                    If I were to apply this ANN model in real life, would it have a 100% accuracy?
-                                    Models tend to shift or decay over time because the world is changing every day.
-                                    With new environment and new variables, models can be further improved in the future.
-                                    I usually check my model every 6 months in practice.
+                                  It looks perfect, but does it last?
+Model decay is an unavoidable problem in machine learning models.
+If I were to apply this ANN model in real life, would it have 100% accuracy?
+Models tend to shift or decay over time because the world is changing every day.
+With a new environment and new variables, the model can be improved in the future.
+I usually check my model every 6 months in practice.
+
 
 
 
