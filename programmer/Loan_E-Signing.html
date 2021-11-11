@@ -107,60 +107,69 @@
                         <div class="row">
                             <div class="white2">
                                 <a>In this project, I worked for a financial company that provides loans to its customers.
-                                    The company receives leads from some peer-to-peer (P2P) agencies and the.
+    The company receives leads from some peer-to-peer (P2P) agencies and the applicants are going to finish their applications on the company website. In the end, they need to
+    make an E-Sign submit their applications and then they will be evaluated by the company for
+    the next step. The purpose of this project is to identify what kind of people are likely not
+    to finish the application so that the company can take some measures to encourage them to finish the
+    process.
 
-                                         <div class="center3"> <img src="static/picture/churn7.png" alt="" width="600px"></div> <br>
+
+                                         <div class="center3"> <img src="static/picture/loan4.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Exploratory data analysis</h7>
+                                        <h7>Exploratory Data Analysis</h7>
                                     </div>
                                     I always do exploratory data analysis before I start building a model. There is a Chinese saying "Sharpening your ax will not delay your job of chopping wood"
+                                    <br>
+
+                            <br> It's always good to create some histograms for the numerical features. Also, the correlation bar chart and matrix are
+very helpful for us to find out some findings and problems.
+<br><br>First of all, in the histograms, I found out one interesting chart, which is the "month employed". Many people answered
+0 in for this question. It's very unlikely that most people work for exactly 1 year or 2 years.
+
+<br><br>Secondly, people who have higher risk scores tend to finish the application because I haven't
+done feature scaling here. From the correlation matrix, we could see that those risk scores are positively
+correlated.
+
+
+                                    <br><br>Last but not least, we see these correlations might not be representative if we
+use non-linear regression later on, but these charts still give a general idea of the dataset.
+Knowing your dataset is very important to data scientists.
+
+                                    <div class="center3"> <img src="static/picture/loan1.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/loan2.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/loan3.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Histograms and Pie Charts</h7>
-                                    </div>
-                                    By checking histograms and pie charts, we could see many young people are using this app and most people
-don't own a house. Also, I saw many features are binary, so I created some pie charts.
-In some pie charts, some answers only account for a very small proportion of these features.
-Then I checked are those answers highly correlated to churn.
-
-                                     <div class="center3"> <img src="static/picture/churn1.png" alt="" width="600px"></div> <br>
- <div class="center3"> <img src="static/picture/churn2.png" alt="" width="600px" ></div> <br>
-
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Correlation Matrix</h7>
-                                    </div>
-                                   We could get more information from the correlation matrix. iPhone users and android users are highly negatively correlated.
-It makes sense because people usually use one phone, so I combined these two variables into one.
-
-                                     <div class="center3"> <img src="static/picture/churn3.png" alt="" width="600px" ></div> <br>
-                                    <div class="center3"> <img src="static/picture/churn4.png" alt="" width="600px" ></div> <br>
-
-                                         <div class="content mt-25 center1 ">
-                                        <h7>Data balancing, feature scaling and model selection</h7>
-                                    </div>
-                                    In this dataset, I got more than 40 features, so I decided to narrow down the features to 20.
-                                    Data balancing and feature scaling are very important as well.
-
-                                    <div class="center3"> <img src="static/picture/churn8.png" alt="" width="600px" ></div> <br>
- <div class="center3"> <img src="static/picture/churn9.png" alt="" width="600px" ></div> <br>
-
-                                          <div class="content mt-25 center1 ">
                                         <h7>Models</h7>
                                     </div>
-                                    Choosing a regression model, I could interpret the coefficients and provide some
-managerial suggestions. Then I use k-fold cross-validation to test my model. The accuracy is 0.643 (+/- 0.009)
 
+                                    I had tried many classification models, such as SVM, Random Forest, KNN, ANN, and so on.
+                                    The random forest model outperformed other models with a 61% accuracy, so I decided to apply grid search to find
+                                    out the best parameters for this model.
+                                     <div class="center3"> <img src="static/picture/loan9.png" alt="" width="600px"></div> <br>
 
-                                    <div class="center3"> <img src="static/picture/churn5.png" alt="" width="600px" ></div> <br>
-<div class="center3"> <img src="static/picture/churn10.png" alt="" width="600px" ></div> <br>
+                                     <div class="content mt-25 center1 ">
+                                        <h7>Model Tuning</h7>
+                                    </div>
+                                    I tried to tune many parameters for the random forest model, trying entropy and Gini and some other parameters.
+It took me more than 11 minutes to tune the model, even though it's a small dataset with relatively few parameters.
+The best random forest model got a 63.45% accuracy.
+
+                                    <div class="center3"> <img src="static/picture/loan10.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/loan5.png" alt="" width="600px"></div> <br>
 
                                      <div class="content mt-25 center1 ">
                                         <h7>Last Thoughts</h7>
                                     </div>
-                                    The main purpose of this project is to help the company improve app features, rather than
-                                    predict the churn. If I had had to predict the churn, I'd add tenure in my model.
-                                    Adding a time factor could increase the model accuracy significantly.
+
+                                   I could've tried to tune more parameters, but it would take a lot of time.
+The model tuning did not give a drastic increase in terms of accuracy.
+Is it worth it? My answer is yes.
+Even with just a 1% increase, it could generate a huge amount of revenue if we have a large dataset.
+Also, if a classification model were to be used in a self-driving car, 1% could help the car make the correct
+decision and save lives.
+
 
 
 
