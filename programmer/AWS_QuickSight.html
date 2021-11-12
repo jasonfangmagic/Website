@@ -106,56 +106,67 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>I used to use Tableau during  the exploitation and reporting stages until I started using AWS QuickSight.
+                                <a>I used to use Tableau during the data exploitation and reporting stages until I started using AWS QuickSight.
                                     AWS QuickSight is composed of Quick and Sight. After using it, I feel QuickSight is too quick and too insightful.
-                                    Due to my Tableau background, I found out that QuickSight is
+                                    Due to my Tableau background, I found out that QuickSight is very similar to Tableau and it also has some features that
+                                    Tableau doesn't have. In this project, I'll show you my experience of using AWS QuickSight.
 
-                                         <div class="center3"> <img src="static/picture/fraud3.png" alt="" width="600px"></div> <br>
-
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Undersampling and Oversampling</h7>
-                                    </div>
-                                    This dataset contains more than 280,000 observations, but only about 400 people have
-been defrauded, which just accounts for 0.14% of the dataset. If we just simply predict
-all people having no fraud risk, we would get a 99.86% accuracy.
-
-                                    <br><br>To avoid this situation, I applied undersampling and oversampling to the dataset.
-                                    Undersampling is just only keeping 400 people who were not defrauded.
-                                    Oversampling is creating 280,000 more defrauded data to match the other class. I used SMOTE
-                                    oversampling this case.
-                                    <div class="center3"> <img src="static/picture/fraud4.png" alt="" width="600px"></div> <br>
-                                     <div class="center3"> <img src="static/picture/fraud5.png" alt="" width="600px"></div> <br>
+                                         <div class="center3"> <img src="static/picture/quick17.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Models</h7>
+                                        <h7>Data</h7>
                                     </div>
-                                    I tried many classification models and I decided to use Artificial Neural Network.
+                                    You can edit your data directly in QuickSight, excluding rows, creating calculated field and so on.
+                                    It's also very easy to change your data type before you start creating your visuals.
+                                    <div class="center3"> <img src="static/picture/quick1.png" alt="" ></div> <br>
 
-                                    <div class="center3"> <img src="static/picture/fraud6.png" alt="" width="600px"></div> <br>
+
                                     <div class="content mt-25 center1 ">
-                                        <h7>Models</h7>
+                                        <h7>Top Contributors</h7>
                                     </div>
+If you find anything unusual, you can choose that point and try to find out the top four contributors to it. For instance,
+                                    in my demo dataset, I saw a drastic drop in revenue, so I picked four columns to see how much
+                                    they caused this drop.
+<div class="center3"> <img src="static/picture/quick3.png" alt="" ></div> <br>
+                                    <div class="center3"> <img src="static/picture/quick4.png" alt="" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Forecasting</h7>
+                                    </div>
+
+                                    It's very easy to predict your trend in QuickSight. Just a simple click, QuickSight would
+                                    generate a future trend by using the random forest algorithm. You can choose your confidence interval
+                                    and periods backward.
+                                    <div class="center3"> <img src="static/picture/quick5.png" alt="" ></div> <br>
+                                     <div class="content mt-25 center1 ">
+                                        <h7>KPI</h7>
+                                    </div>
+                                    Creating a donut chart and KPI is very easy as well.
+                                    <div class="center3"> <img src="static/picture/quick6.png" alt="" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Table</h7>
+                                    </div>
+                                    Creating a pivot table in QuickSight is as simple as in Excel. Adding a reference line and
+                                    some icons in your table could draw more attention in your presentation.
+                                     <div class="center3"> <img src="static/picture/quick9.png" alt="" ></div> <br>
+                                    <div class="center3"> <img src="static/picture/quick12.png" alt="" ></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Filters</h7>
+                                    </div>
+
+                                    It's very important to create some filters if you want to
+                                    have an interactive dashboard. QuickSight provides this feature for you.
+                                      <div class="center3"> <img src="static/picture/quick15.png" alt="" ></div> <br>
 
                                      <div class="content mt-25 center1 ">
-                                        <h7>Confusion Matrix</h7>
+                                        <h7>Insights</h7>
                                     </div>
-                                    These are two confusion matrices for oversampling and undersampling respectively.
-The accuracy of the model is 0.9994, which is good enough for fraud detection. Also, the
-type 2 errors are not a lot.
-
-                                    <div class="center3"> <img src="static/picture/fraud1.png" alt="" width="600px"></div> <br>
-                                     <div class="center3"> <img src="static/picture/fraud2.png" alt="" width="600px"></div> <br>
-
-                                           <div class="content mt-25 center1 ">
-                                        <h7>Last Thoughts</h7>
-                                    </div>
-                                 What's the ultimate goal for data scientists to create a model? People are obsessed with numbers. They want to have
-high accuracy, F1 Score, 0.05 P-value, and so on. In the fraud detection case, if you just simply
-guess no fraud at all, you would get a 99.86% accuracy. The number is not the goal.
-
-                                    <br><br>Data scientists are not cheap. The ultimate goal for data scientists is to create value for
-                                    the company. Everything you do should back into short-term value or long-term strategic initiatives.
-                                    Knowing the business problem is very critical for data scientists before they start building the model.
+                                    This is the most impressive function that I've ever seen in a BI tool.
+                                    Just by clicking insights, you are able to see all the insights generated by AWS.
+                                    You could choose to edit these insights and add your own thoughts. Too quick and too insightful.
+                                    <div class="center3"> <img src="static/picture/quick13.png" alt="" ></div> <br>
 
 
 
