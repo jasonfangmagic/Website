@@ -106,77 +106,87 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>I used to use Tableau during the data exploitation and reporting stages until I started using AWS QuickSight.
-                                    AWS QuickSight is composed of Quick and Sight. After using it, I feel QuickSight is too quick and too insightful.
-                                    Due to my Tableau background, I found out that QuickSight is very similar to Tableau and it also has some features that
-                                    Tableau doesn't have. In this project, I'll show you my experience of using AWS QuickSight.
+                                <a>Classifying a cat or dog image sounds very easy, but nobody could have a 100% accuracy model nowadays.
+    There is a famous meme about AI, which is that AI identifies a cat as a dog. In this project,
+    I ended up with an 88% accuracy model in my testing dataset. The model is just an example of how I created a Convolutional Neural Network model.
 
-                                         <div class="center3"> <img src="static/picture/cat1.webp" alt="" ></div> <br>
 
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Data</h7>
-                                    </div>
-                                   You can edit your data directly in QuickSight, excluding rows, creating calculated fields, and so on.
-It's also very easy to change your data type before you start creating your visuals.nnmn
-
-                                    <div class="center3"> <img src="static/picture/quick1.png" alt="" ></div> <br>
-
+                                    <div class="center3"> <img src="static/picture/cat1.webp" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Top Contributors</h7>
+                                        <h7>Dataset</h7>
                                     </div>
-If you find anything unusual, you can choose that point and try to find out the top four contributors to it. For instance,
-                                    in my demo dataset, I saw a drastic drop in revenue, so I picked four columns to see how much
-                                    they caused this drop.
-<div class="center3"> <img src="static/picture/quick3.png" alt="" ></div> <br>
-                                    <div class="center3"> <img src="static/picture/quick4.png" alt="" ></div> <br>
+                                    This is a balanced dataset. There are 4000 cat and 4000 dog images in the training dataset and
+                                    1000 cat and 1000 dogs images in the testing dataset. The total size is just 232 MB, but
+                                    there are still many things I need to do in order to reduce the size.
+
+                                    <div class="center3"> <img src="static/picture/cat2.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/cat3.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Forecasting</h7>
+                                        <h7>CNN and ANN Layers</h7>
                                     </div>
+                                    Due to my laptop performance, I only chose to use 32 feature filters and changed the
+                                    size of my images into 64*64. Also, I selected my feature detector size as a 3*3 square and
+                                    my pooling size as a 2*2 square with a stride of 2. To improve the accuracy, I added two
+                                    convolutional layers.
 
-                                   It's very easy to predict your trend in QuickSight. With just a simple click, QuickSight would
-generate a future trend by using the random forest algorithm. You can choose your confidence interval
-and periods backward.
+                                    <br><br>After adding the convolutional layers, I added one artificial neural network layer.
+                                    To prevent overfitting, I added one dropout layer with a 0.1 dropout rate. Also,
+                                    because classifying images is much more complicated, I used 128 nodes in this case.
 
-                                    <div class="center3"> <img src="static/picture/quick5.png" alt="" ></div> <br>
-                                     <div class="content mt-25 center1 ">
-                                        <h7>KPI</h7>
-                                    </div>
-                                    Creating a donut chart and KPI is very easy as well.
-                                    <div class="center3"> <img src="static/picture/quick6.png" alt="" ></div> <br>
+                                     <br><br>In the end, I used the adam optimizer, a famous stochastic gradient descent algorithm. Because
+                                    I only have two classes, binary cross-entropy was used as the loss function.
+
+ <div class="center3"> <img src="static/picture/cat4.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Table</h7>
+                                        <h7>Data Augmentation</h7>
                                     </div>
-                                    Creating a pivot table in QuickSight is as simple as in Excel. Adding a reference line and
-                                    some icons in your table could draw more attention in your presentation.
 
-                                     <div class="center3"> <img src="static/picture/quick9.png" alt="" ></div> <br>
-                                    <div class="center3"> <img src="static/picture/quick12.png" alt="" ></div> <br>
+                                    Even though I have thousands of pictures, I still want to have more data.
+                                    Three techniques were used here, shear, zoom and flip. I also rescaled the images in this step.
+
+ <div class="center3"> <img src="static/picture/cat5.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Filters</h7>
+                                        <h7>Model Training and Saving</h7>
                                     </div>
+                                   The training process still takes several hours even I tried my best to minimize this process.
+The model has an 88% accuracy, and I don't want to lose this model after several hours of the training
+process. The model was saved.
 
-                                    It's very important to create some filters if you want to
-                                    have an interactive dashboard. QuickSight provides this feature for you.
-
-                                    <div class="center3"> <img src="static/picture/quick15.png" alt="" ></div> <br>
+                                     <div class="center3"> <img src="static/picture/cat6.png" alt="" width="600px"></div> <br>
 
                                      <div class="content mt-25 center1 ">
-                                        <h7>Insights</h7>
+                                        <h7>Model Testing</h7>
                                     </div>
-                                    This is the most impressive function that I've ever seen in a BI tool.
-                                    Just by clicking insights, you are able to see all the insights generated by AWS.
-                                    You could choose to edit these insights and add your own thoughts. Too quick and too insightful.
+                                    I used some wired images in my model. Most of them are correct, except the meme cat picture.
+                                    It's very hard to believe that my model predicted a wrong result, but after testing other cat
+                                    images, it occurred to me that my model really did a wrong prediction. Anyway, the accuracy of
+                                    this model is just 88%. This is not a bad model, but it's not a perfect model.
 
-                                    <div class="center3"> <img src="static/picture/quick13.png" alt="" ></div> <br>
+                                     <div class="center3"> <img src="static/picture/cat7.png" alt="" width="600px"></div> <br>
+<div class="center3"> <img src="static/picture/cat8.jpg" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/cat9.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/cat10.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/cat11.png" alt="" width="600px"></div> <br>
 
 
 
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Final Thoughts</h7>
+                                    </div>
+                                   I could've improved my model by setting a higher resolution, more nodes, and more epochs. Also, I could've selected more images, applied the grid search method, and some other techniques. While, due to my laptop performance, I don't want to spend several days training my model. Long way to go as a data scientist.
 
-                                    <br><br>Software used: AWS QuickSight
+
+
+                                    <br><br>Software used: Python, Pycharm
+                                     <br><br>Packages used: Tensorflow, Keras,
+
+
 
 
 
