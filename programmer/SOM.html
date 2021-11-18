@@ -86,7 +86,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li> <div class="center3">SOMm</div></li>
+                        <li> <div class="center3">Self-Organizing Maps</div></li>
                     </ul>
                 </div>
             </div>
@@ -106,53 +106,77 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>In 2012, some scholars from Stanford published an article saying that they could use the Recurrent Neural Networks (RNN) to predict the stock price. I knew that RNN models could make powerful time-series predictions because of long short-term memory (LSTM). While I didn't expect that it could be used to
-    predict the stock price, so I tried it myself, and I also got a very accurate model.
-
-                                    <div class="center3"> <img src="static/picture/stock2.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/stock3.png" alt="" width="600px"></div> <br>
-
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Data Preprocessing</h7>
-                                    </div>
-                                   The first step is to pick a stock and get the information on this stock. I chose to use Google as my example stock. Then I used the stock price from day 1 to day 999 as my training feature dataset and the stock price from day 2 to day  1000 as my training label dataset. The rest days from day 1001 to day 1259 are my testing dataset. Feature scaling is necessary for neural networks, so I applied normalization in the last step of
- the data preprocessing.
-
-
-                                    <div class="center3"> <img src="static/picture/stock4.png" alt="" width="600px"></div> <br>
+                                <a>Self-Organizing Map is a type of unsupervised deep learning model. The purpose of using
+    SOMs are to reduce the dimension of our dataset and create visuals.
+     In this project, I combined SOMs and the Artificial Neural Network to create a model for fraud detection.
+    We don't want to see that our customers are cheated, and then we perform supervised learning to protect them in the future. Fraud has to be stopped before it happens.
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Model</h7>
+                                        <h7>Self-Organizing Maps</h7>
                                     </div>
+                                    The math behind the SOMs algorithm is fairly easy, so there are many
+                                    variations. Also, there are many advantages of using Self-Organizing Maps:
 
-                                    The model building part is very similar to the ANN or CNN model. I just had to change several parts of it.
-                                        I chose to use 'tanh' as my last activation function, 'rmsprop' as my optimizer, and 'mean_squared_error' as my loss function.
+                                    <br>1. SOMs retain topology of the input set.
+                                    <br>2. SOMs reveal correlations that are not easily identified.
+                                    <br>3. SOMs classify data without supervision
+                                    <br>4. No target vector, so no backpropagation.
+                                    <br>5. No lateral connections between output nodes.
+                                     <div class="center3"> <img src="static/picture/som2.png" alt="" width="600px"></div> <br>
 
-   <div class="center3"> <img src="static/picture/stock5.png" alt="" width="600px"></div> <br>
+
+                                     <div class="content mt-25 center1 ">
+                                        <h7>Fraud Detection</h7>
+                                    </div>
+                                    The dataset of this case doesn't have a label. There are just some features and the last
+                                    column is whether the customer's application has been approved or not.
+                                     <div class="center3"> <img src="static/picture/som3.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Result</h7>
+                                        <h7>SOMs Model</h7>
                                     </div>
-                                    I plotted my result. The left part is the training dataset and the right part is the
-                                    testing dataset. My model is very accurate and the RMSE is 0.03. It looks like I
-                                    could easily predict the stock price and I'm going to be rich.
+                                    Feature scaling is very important in deep learning. To create SOMs, I used normalization.
+                                    SOM is not included in the sklearn library, so I used a package called MiniSom.
+                                    I just need to define the map's size (10*10), input size (features number), sigma (radius),
+                                    and learning rate.
 
-                                       <div class="center3"> <img src="static/picture/stock7.png" alt="" width="600px"></div> <br>
-  <div class="center3"> <img src="static/picture/stock1.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som4.png" alt="" width="600px"></div> <br>
+                                    After building the model, I was able to visualize the model by using pylab. One main
+                                    advantage of SOMs is that they can segment outliers. In the fraud detection process,
+                                    people who are likely to be cheated are outliers. I just need to identify the white
+                                    boxes in the plot and then mark them as vulnerable customers.
+                                    <div class="center3"> <img src="static/picture/som5.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som1.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Final Thoughts</h7>
+                                        <h7>Artificial Neural Network</h7>
                                     </div>
-                                    The reality is that I couldn't predict the stock price.
-A real prediction should be a line that on the left side of the real stock price line so that I could predict the stock price for tomorrow.
-However, the RNN model only changed a bit of today's stock price by using its
-short-term memory. Overall, the RNN model cannot be used to predict the stock is not applicable, but
-it can be used to predict some business problems that have certain patterns.
+                                    After coding these vulnerable customers into the original dataset as the label, I could
+                                    create a supervised learning model by using the Artificial Neural Network.
+                                    Data preprocessing the key. Data balancing and feature scaling are the most important steps.
+                                    In the end, I got a 97% accuracy model.
+                                    <div class="center3"> <img src="static/picture/som6.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som7.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som8.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som9.png" alt="" width="600px"></div> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
                                     <br><br>Software used: Python, Pycharm
-                                     <br><br>Packages used: Tensorflow, Keras,
+                                     <br><br>Packages used: Tensorflow, Keras, Sklearn, MiniSom, pylab,
 
 
 
