@@ -1,0 +1,424 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KN6DXRFLS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1KN6DXRFLS');
+    </script>
+
+    <!--========= Required meta tags s=========-->
+    <meta charset="utf-8">
+    <meta  http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Jason Fang - Projects</title>
+
+    <!--====== Favicon ======-->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="images/x-icon" />
+    <link rel="icon" href="static/picture/webicon.png">
+
+    <!--====== CSS Here ======-->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/lightcase.css">
+    <link rel="stylesheet" href="static/css/meanmenu.css">
+    <link rel="stylesheet" href="static/css/nice-select.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- header start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-4 my-auto">
+                    <a href="index" class="site-logo">
+                        <img src="static/picture/logo.png" alt="LOGO">
+                    </a>
+                </div>
+                <div class="col-lg-9 col-8">
+                    <div class="menu-area">
+                        <div class="main-menu">
+                            <nav id="main-menu">
+                                <ul>
+                                    <li><a href="home">Home</a></li>
+                                    <li><a href="about">About</a></li>
+                                    <li><a href="portfolio">Portfolio</a></li>
+                                    <li><a href="projects">Projects</a></li>
+                                    <!--<li><a href="../magician/home">Magician</a></li>-->
+                                    <li><a href="contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="contact" class="site-btn d-inline d-lg-none d-xl-inline">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="col-xl-12 text-right">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="home">Home</a></li>
+                        <li>-</li>
+                        <li> <div class="center3">Self-Organizing Maps</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <span class="shape shape__left-top"><img src="static/picture/shape-1.png" alt=""></span>
+        <span class="shape shape__right-bottom"><img src="static/picture/b-shape.png" alt=""></span>
+    </div>
+    <!-- breadcrumb area end -->
+
+
+    <!-- service area start -->
+    <section class="blog-area2">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-xl-10">
+                    <div class="blog-wrap">
+                        <div class="row">
+                            <div class="white2">
+                                <a>Self-Organizing Map is a type of unsupervised deep learning model. The purpose of using
+    SOMs is to reduce the dimension of our dataset and create visuals.
+     In this project, I combined SOMs and the Artificial Neural Network to create a model for fraud detection.
+    We don't want to see that our customers are cheated, and then we perform supervised learning to protect them in the future. Fraud has to be stopped before it happens.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Self-Organizing Maps</h7>
+                                    </div>
+                                    The math behind the SOMs algorithm is fairly easy, so there are many
+                                    variations. Also, there are many advantages of using Self-Organizing Maps:
+
+                                    <br>1. SOMs retain topology of the input set.
+                                    <br>2. SOMs reveal correlations that are not easily identified.
+                                    <br>3. SOMs classify data without supervision
+                                    <br>4. No target vector, so no backpropagation.
+                                    <br>5. No lateral connections between output nodes.
+                                     <div class="center3"> <img src="static/picture/som2.png" alt="" width="600px"></div> <br>
+
+
+                                     <div class="content mt-25 center1 ">
+                                        <h7>Fraud Detection</h7>
+                                    </div>
+                                    The dataset of this case doesn't have a label. There are just some features and the last
+                                    column is whether the customer's application has been approved or not.
+                                     <div class="center3"> <img src="static/picture/som3.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>SOMs Model</h7>
+                                    </div>
+                                    Feature scaling is very important in deep learning. To create SOMs, I used normalization.
+                                    SOM is not included in the sklearn library, so I used a package called MiniSom.
+                                    I just need to define the map's size (10*10), input size (features number), sigma (radius),
+                                    and learning rate.
+
+                                    <div class="center3"> <img src="static/picture/som4.png" alt="" width="600px"></div> <br>
+                                    After building the model, I was able to visualize the model by using pylab. One main
+                                    advantage of SOMs is that they can segment outliers. In the fraud detection process,
+                                    people who are likely to be cheated are outliers. I just need to identify the white
+                                    boxes in the plot and then mark them as vulnerable customers.
+                                    <div class="center3"> <img src="static/picture/som5.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som1.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Artificial Neural Network</h7>
+                                    </div>
+                                    After coding these vulnerable customers into the original dataset as the label, I could
+                                    create a supervised learning model by using the Artificial Neural Network.
+                                    Data preprocessing the key. Data balancing and feature scaling are the most important steps.
+                                    In the end, I got a 97% accuracy model.
+                                    <div class="center3"> <img src="static/picture/som6.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som7.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som8.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/som9.png" alt="" width="600px"></div> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <br><br>Software used: Python, Pycharm
+                                     <br><br>Packages used: Tensorflow, Keras, Sklearn, MiniSom, pylab,
+
+
+
+
+
+
+                                    <br><br>
+                                <div class="center">
+                                    <a href="portfolio" class="site-btn ">Portfolio</a>
+                                    <!--<a href="AB_Testing" class="site-btn ">A/B Testing Workflow</a>-->
+                                </div>
+
+
+                                </div>
+
+
+                    </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- service area end -->
+
+    <!-- testimonial area start -->
+    <!--<div class="testimonial-area mt-120 pt-80">
+        <span class="side-shape side-shape__right side-shape__about">
+            <img src="static/picture/shape-side.png" alt="">
+        </span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-right">
+                    <div class="section-heading mb-90">
+                        <h2>Testimonial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="testimonial-shape">
+                        <img src="static/picture/testimonial-shape.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="testimonial owl-carousel">
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__item">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard
+                                dummy text ever since the 1500s,</p>
+                            <div class="testimonial__bottom">
+                                <h4>David</h4>
+                                <span>Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-190">
+                <div class="col-xl-12">
+                    <div class="brand owl-carousel">
+                        <div class="brand__item">
+                            <img src="static/picture/b-1.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-2.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-3.png" alt="">
+                        </div>
+                        <div class="brand__item">
+                            <img src="static/picture/b-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- testimonial area end -->
+
+    <!-- cta area start -->
+   <!-- <section class="cta-area mt-190">
+        <span class="shape"><img src="static/picture/shape-work.png" alt=""></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="cta-wrap">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <h2 class="mb-25">Let's work together on
+                                    your next project</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s,</p>
+                            </div>
+                            <div class="col-xl-5 align-self-center text-right">
+                                <a href="contact.html" class="site-btn">Let's Talk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- cta area end -->
+ <!--   <div class="hearts">
+    <img src="static/picture/clubs.png" alt="">
+    </div>-->
+    <!--footer-->
+    <!--  /*wechat id*/-->
+    <div class="modal fade" id="wechat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext"  id="wechat">WeChat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>Wechat ID:
+                        <br><br>jasonfangmagic
+                        <br>
+                        <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >
+                        <br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  /*email id*/-->
+    <div class="modal fade" id="ev" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext"  id="ev">Email</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>jasonfangworks@gmail.com
+                        <br><br>
+                        <!--    <br>
+                            <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >-->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--phone-->
+    <div class="modal fade" id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+                <div class="modal-overlay">
+                    <div class="modal-header">
+                        <h5 class="wechattext" id="phone">Phone</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="wechattext">
+                        <br>301-633-5387
+                        <br><br>
+                        <!--    <br>
+                            <br><img src="static/picture/wechat.JPG" alt="" class="wechatimg" >-->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn site-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal end-->
+    <!-- wechat id end-->
+    <!-- footer start -->
+    <footer class="site-footer mt-175">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="social-links">
+                        <a data-toggle="modal" data-target="#ev"><i class="fa fa-envelope"></i></a>
+                        <a data-toggle="modal" data-target="#phone"><i class="fa fa-phone"></i></a>
+                        <a data-toggle="modal" data-target="#wechat"><i class="fab fa-weixin" ></i></a>
+                        <a href="https://www.linkedin.com/in/jasonfangmagic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jasonfangmagic" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://jasonfangmagic.com" target="_blank"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto text-right">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; Jason Fang. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!--========= JS Here =========-->
+    <script src="static/js/jquery-2.2.4.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.meanmenu.min.js"></script>
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <script src="static/js/lightcase.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/tilt.jquery.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+    <script src="static/js/waypoint.js"></script>
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
