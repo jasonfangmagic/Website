@@ -86,7 +86,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li> <div class="center3">Self-Organizing Maps</div></li>
+                        <li> <div class="center3">SQL Elementary</div></li>
                     </ul>
                 </div>
             </div>
@@ -106,77 +106,19 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>Self-Organizing Map is a type of unsupervised deep learning model. The purpose of using
-    SOMs is to reduce the dimension of our dataset and create visuals.
-     In this project, I combined SOMs and the Artificial Neural Network to create a model for fraud detection.
-    We don't want to see that our customers are cheated, and then we perform supervised learning to protect them in the future. Fraud has to be stopped before it happens.
+                                <a>In this project, I used a movie dataset, which contains 19 tables. The
+                                    relationship among these tables is shown below. Some basic sql queries have
+                                    been used in this project. Basic doesn't mean easy and useless. In my opinion,
+                                    basic stuff is the most important part in any field.
+                                    <div class="center3"> <img src="static/picture/movie1.png" alt=""></div> <br>
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Self-Organizing Maps</h7>
                                     </div>
-                                    The math behind the SOMs algorithm is fairly easy, so there are many
-                                    variations. Also, there are many advantages of using Self-Organizing Maps:
-
-                                    <br>1. SOMs retain topology of the input set.
-                                    <br>2. SOMs reveal correlations that are not easily identified.
-                                    <br>3. SOMs classify data without supervision
-                                    <br>4. No target vector, so no backpropagation.
-                                    <br>5. No lateral connections between output nodes.
-                                     <div class="center3"> <img src="static/picture/som2.png" alt="" width="600px"></div> <br>
 
 
-                                     <div class="content mt-25 center1 ">
-                                        <h7>Fraud Detection</h7>
-                                    </div>
-                                    The dataset of this case doesn't have a label. There are just some features and the last
-                                    column is whether the customer's application has been approved or not.
-                                     <div class="center3"> <img src="static/picture/som3.png" alt="" width="600px"></div> <br>
+                                    <br><br>Software used: MySQLWorkbench
 
-                                    <div class="content mt-25 center1 ">
-                                        <h7>SOMs Model</h7>
-                                    </div>
-                                    Feature scaling is very important in deep learning. To create SOMs, I used normalization.
-                                    SOM is not included in the sklearn library, so I used a package called MiniSom.
-                                    I just need to define the map's size (10*10), input size (features number), sigma (radius),
-                                    and learning rate.
-
-                                    <div class="center3"> <img src="static/picture/som4.png" alt="" width="600px"></div> <br>
-                                    After building the model, I was able to visualize the model by using pylab. One main
-                                    advantage of SOMs is that they can segment outliers. In the fraud detection process,
-                                    people who are likely to be cheated are outliers. I just need to identify the white
-                                    boxes in the plot and then mark them as vulnerable customers.
-                                    <div class="center3"> <img src="static/picture/som5.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/som1.png" alt="" width="600px"></div> <br>
-
-                                    <div class="content mt-25 center1 ">
-                                        <h7>Artificial Neural Network</h7>
-                                    </div>
-                                    After coding these vulnerable customers into the original dataset as the label, I could
-                                    create a supervised learning model by using the Artificial Neural Network.
-                                    Data preprocessing the key. Data balancing and feature scaling are the most important steps.
-                                    In the end, I got a 97% accuracy model.
-                                    <div class="center3"> <img src="static/picture/som6.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/som7.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/som8.png" alt="" width="600px"></div> <br>
-                                    <div class="center3"> <img src="static/picture/som9.png" alt="" width="600px"></div> <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <br><br>Software used: Python, Pycharm
-                                     <br><br>Packages used: Tensorflow, Keras, Sklearn, MiniSom, pylab,
 
 
 
