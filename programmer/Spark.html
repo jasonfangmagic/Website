@@ -86,7 +86,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li> <div class="center3">Spark</div></li>
+                        <li> <div class="center3">Spark Spam Filter</div></li>
                     </ul>
                 </div>
             </div>
@@ -108,8 +108,8 @@
                             <div class="white2">
                                 <a>Data scientists deal with big data by using Spark which is very powerful and user-friendly.
                                     Spark 2.0 has shifted towards a dataframe syntax which is just like pandas and Spark's MLlib
-                                    library is similar to sklearn library. You also can write SQL queries by using Spark. Since I already have
-                                    many machine learning and SQL projects, I used Spark Streaming to process a Twitter analysis in this project.
+                                    library is similar to sklearn library. You also can write SQL queries by using Spark. Since I've had
+                                    many machine learning and SQL projects, I used Spark MLlib to create a spam filter in this Natural Language Processing project.
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Why I choose Spark</h7>
@@ -127,7 +127,7 @@
                                     <br>3. Parallel operation - partioned
                                     <br>4. Ability to use many data sources
 
-                                     <div class="center3"> <img src="static/picture/spark1.png" alt=""></div> <br>
+                                     <div class="center3"> <img src="static/picture/spark1.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
                                         <h7>My Environment</h7>
@@ -135,18 +135,43 @@
                                     There are many platforms to utilize Spark, such as databricks, AWS EC2, AWS EMR, Oracle VirtualBox.
                                     I selected to use Pyspark on Ubuntu, a Linux system, running on Oracle VirtualBox. The platform
                                     doesn't really matter. The example below is a SQL query by using Pyspark SQL.
-                                     <div class="center3"> <img src="static/picture/spark2.png" alt=""></div> <br>
+                                     <div class="center3"> <img src="static/picture/spark11.png" alt="" width="600px"></div> <br>
+                                     <div class="center3"> <img src="static/picture/spark2.png" alt="" width="600px"></div> <br>
+
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Spark Streaming</h7>
+                                        <h7>NLP Spam Filter</h7>
                                     </div>
-                                    Spark Streaming is an extension of the core Spark API that enables scalable, high-throughput, fault-tolerant stream processing of live data streams.
-                                    <div class="center3"> <img src="static/picture/spark3.png" alt=""></div> <br>
+                               In this NLP project, there is a cleaned dataset that has two classes, ham and spam. I used findspark to locate Spark and created a spark session at the beginning.
+
+                                    <div class="center3"> <img src="static/picture/spark6.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Transform Features</h7>
+                                    </div>
+                                    Technically, I only had one feature which is the emails, so I had to create some features here.
+It's easy to find out that the lengths between ham and spam emails are significantly different.
+I used this as the most important feature to classify spam emails. In practice, I should've transformed
+more features to increase the accuracy, but this is just a Spark example.
+
+
+                                     <div class="center3"> <img src="static/picture/spark7.png" alt="" width="600px"></div> <br>
+
+                                     <div class="content mt-25 center1 ">
+                                        <h7>NLP Results</h7>
+                                    </div>
+                                    After transforming the emails into features, I used the Naive Bayes models to classify my results.
+                                    The accuracy is 92.3% in the testing dataset which is good enough to filter spam.
+
+                                     <div class="center3"> <img src="static/picture/spark8.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/spark9.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/spark10.png" alt="" width="600px"></div> <br>
 
 
 
+                                    <br><br>Software used: VirtaulBox, Ubuntu, Jupyter Notebook
+                                    <br><br>Packages used: Pyspark, Spark MLlib
 
-                                    <br><br>Software used: Python, Pyspark,
 
 
 
