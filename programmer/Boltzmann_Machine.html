@@ -109,27 +109,50 @@
                                 <a>Boltzmann Machine is an unsupervised deep learning model. It has no direction, and it's not a deterministic model.
                                     In deterministic models, the output of the model is fully determined by the parameter values and the initial conditions initial conditions.
                                     Boltzmann Machine is a stochastic model which possesses some inherent randomness. The same set of parameter values and initial conditions will lead to an ensemble of different outputs.
-
+                                    A movie dataset has been used which has more than 24,000,000 ratings and 670,000 tags applied to 40,000 movies by 260,000 users.
 
                                     <div class="content mt-25 center1 ">
                                         <h7>Boltzmann Machine Model</h7>
                                     </div>
                                     Input values are the visible nodes in the image below. They are connected to each other and create some
-                                    hidden nodes. It's just like a nuclear power plant. You can measure some metrics in the plant, but there
-                                    are also some metrics you cannot measure. Also, the purpose of this model is to find out a stable and normal
-                                    state of it. Just like the nuclear power plant, you cannot use a supervised learning model to measure
-                                    melt down, so we use an unsupervised learning model to check the state of our model. For Boltzmann Machines,
-                                    all the nodes are equal and same. Also, it uses contrastive divergence to adjust its weights.
-                                     <div class="center3"> <img src="static/picture/bm1.png" alt="" width="600px"></div> <br>
+hidden nodes. It's just like a nuclear power plant. You can measure some metrics in the plant, but there
+are also some metrics you cannot measure. Also, the purpose of this model is to find out a stable and normal
+state of it. Just like the nuclear power plant, you cannot use a supervised learning model to measure
+meltdown, so we use an unsupervised learning model to check the state of our model. For Boltzmann Machines,
+all the nodes are equal and the same. Also, it uses contrastive divergence to adjust its weights.
+
+
+                                    <div class="center3"> <img src="static/picture/bm1.png" alt="" width="600px"></div> <br>
                                     <div class="center3"> <img src="static/picture/bm2.png" alt="" width="600px"></div> <br>
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Boltzmann Machine Model</h7>
+                                        <h7>Boltzmann Machine Recommender System</h7>
                                     </div>
+                                    In this project, I use Boltzmann Machines to make two recommender systems, one to predict the audience's yes or no to a movie,
+the other one to predict a movie's rating. These are the two most popular recommender systems in the industry. A movie dataset
+has been used which has more than 24,000,000 ratings and 670,000 tags applied to 40,000 movies by 260,000 users.
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Coding</h7>
+                                    </div>
+                                    <div class="center3"> <img src="static/picture/bm3.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/bm4.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/bm5.png" alt="" width="600px"></div> <br>
+
+                                    <div class="center3"> <img src="static/picture/bm6.png" alt="" width="600px"></div> <br>
+
+                                     <div class="content mt-25 center1 ">
+                                        <h7>Conclusion</h7>
+                                    </div>
+                                    After training and testing the dataset, the test lost is 25%, which means we have a 75% accuracy.
 
 
-                                    <br><br>Software used: VirtualBox, Ubuntu, Jupyter Notebook
-                                    <br>Packages used: Pyspark, Spark MLlib
+
+
+                                    <br><br>Software used: Python, Jupyter Notebook
+                                    <br>Packages used: Pytorch
 
 
 
