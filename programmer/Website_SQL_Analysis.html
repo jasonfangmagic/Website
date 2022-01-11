@@ -86,7 +86,7 @@
                     <ul class="breadcrumb-nav">
                         <li><a href="home">Home</a></li>
                         <li>-</li>
-                        <li> <div class="center3">SQL Maven Project</div></li>
+                        <li> <div class="center3">Website SQL Analysis</div></li>
                     </ul>
                 </div>
             </div>
@@ -106,15 +106,67 @@
                     <div class="blog-wrap">
                         <div class="row">
                             <div class="white2">
-                                <a>In this project, I used a movie dataset, which contains 19 tables. The
-                                    relationship among these tables is shown below. Some basic sql queries have
-                                    been used in this project. Basic doesn't mean easy and useless. In my opinion,
-                                    basic stuff is the most important part in any field.
-                                    <div class="center3"> <img src="static/picture/movie1.png" alt=""></div> <br>
+                                <a>Using SQL to analyze website performance is a daily routine for data scientists. It's not necessary
+                                    to always use machine learning and deep learning models to create predictive models. Solving business
+                                    problems is the top task for us rather than creating models. In this project, I use an e-commerce website
+                                    dataset to analyze some website problems such as traffic source, bounce rate and so on. Even though I'd like to
+                                    create some predictive models in real life, I only use SQL in this project.
+
 
                                     <div class="content mt-25 center1 ">
-                                        <h7>Self-Organizing Maps</h7>
+                                        <h7>E-commerce Dataset</h7>
                                     </div>
+                                    It's a simplified e-commerce dataset. Usually, there are more tables in real life, but
+                                    some key tables have been used in this project.
+
+                                        <div class="center3"> <img src="static/picture/ec1.png" alt="" width="600px"></div> <br>
+
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Traffic Source</h7>
+                                    </div>
+                                    Traffic source analysis is about understanding where your customers are coming
+                                    from and which channels are driving the highest quality traffic. Paid traffic
+                                    is commonly tagged with tracking (UTM) parameters, which are appended to URLs and
+                                    allow us to tie website activity back to specific traffic sources and campaigns.
+                                    The first image below shows how many sessions are coming from each campaign.
+                                    The second image shows the conversion rate from sessions to orders. The third image
+                                    shows the conversion rate for both devices.
+
+                                    <div class="center3"> <img src="static/picture/ec3.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/ec2.png" alt="" width="600px"></div> <br>
+                                    <div class="center3"> <img src="static/picture/ec4.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Traffic Source</h7>
+                                    </div>
+                                    Landing page analysis is also very important to the website. In this SQL query,
+I used a sub-query to find out the top landing pages. I also could've created a
+temporary table which is the as the sub-query. After all, the sub-query creates a table as well.
+
+                                    <div class="center3"> <img src="static/picture/ec5.png" alt="" width="600px"></div> <br>
+
+                                    <div class="content mt-25 center1 ">
+                                        <h7>Bounce Rate</h7>
+                                    </div>
+                                    To find out the bounce rate for each landing page, there are multiple steps that I have to do.
+Technically, I could've written a super long sub-query to find out the bounce rates. However, if I
+have to go through multiple steps, I'd like to create some temporary tables, which is easier for me and
+others to read.
+
+
+                                    <br>1, I need to find the website pageview id associated with the website session id.
+                                    <div class="center3"> <img src="static/picture/ec6.png" alt="" width="600px"></div> <br>
+
+                                    <br>2, I need to identify the landing page of each session.
+                                    <div class="center3"> <img src="static/picture/ec7.png" alt="" width="600px"></div> <br>
+
+                                    <br>3, I need to count pageviews for each session to identify bounces.
+                                    <div class="center3"> <img src="static/picture/ec8.png" alt="" width="600px"></div> <br>
+
+                                    <br>4. I need to summarize total sessions and bounced sessions by landing page.
+
+<div class="center3"> <img src="static/picture/ec9.png" alt="" width="600px"></div> <br>
 
 
                                     <br><br>Software used: MySQLWorkbench
